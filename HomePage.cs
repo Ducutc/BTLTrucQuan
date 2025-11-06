@@ -20,7 +20,6 @@ namespace CoffeeHouseABC
             LoadUserControl(new UC_Menu());
         }
 
-        // ✅ Load UserControl vào panel
         private void LoadUserControl(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -28,7 +27,6 @@ namespace CoffeeHouseABC
             panelContainer.Controls.Add(uc);
         }
 
-        // ✅ Các nút chuyển trang
         private void btnThucDon_Click(object sender, EventArgs e)
         {
             LoadUserControl(new UC_Menu());
@@ -59,7 +57,7 @@ namespace CoffeeHouseABC
         }
 
 
-        // ✅ THU / MỞ MENU
+        
         private void ToggleMenu()
         {
             if (!isCollapsed)
@@ -78,9 +76,6 @@ namespace CoffeeHouseABC
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.BringToFront();
         }
-
-
-        // ✅ THU MENU → icon vào giữa
         private void CollapseAllButtons()
         {
             foreach (var ctrl in guna2Panel3.Controls)
@@ -88,23 +83,16 @@ namespace CoffeeHouseABC
                 if (ctrl is Guna2Button btn)
                 {
                     btn.Text = "";
-
-                    // Icon vào giữa
                     btn.CustomImages.ImageOffset = new Point(0, 0);
                     btn.CustomImages.ImageSize = new Size(30, 30);
-
-                    // Căn text/icon vào giữa
                     btn.TextAlign = HorizontalAlignment.Center;
                     btn.TextOffset = new Point(0, 0);
                 }
             }
         }
-
-
-        // ✅ MỞ MENU → hiện chữ + icon trái
         private void ExpandAllButtons()
         {
-            // ✅ Gán text lại
+            
             btnDanhMuc.Text = "Danh mục";
             btnThucDon.Text = "Thực đơn";
             btnDonHang.Text = "Đơn hàng";
@@ -117,17 +105,12 @@ namespace CoffeeHouseABC
             {
                 if (ctrl is Guna2Button btn)
                 {
-                    // Icon về trái
                     btn.CustomImages.ImageOffset = new Point(10, 0);
                     btn.CustomImages.ImageSize = new Size(30, 30);
-
-                    // Text lệch phải
                     btn.TextAlign = HorizontalAlignment.Left;
                     btn.TextOffset = new Point(45, 0);
                 }
             }
-        }
-
-        
+        } 
     }
 }
