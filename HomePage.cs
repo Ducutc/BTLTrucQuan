@@ -1,4 +1,5 @@
 ﻿using CoffeeHouseABC.User_Control;
+using CoffeeHouseABC.Utils;
 using Guna.UI2.WinForms;
 
 namespace CoffeeHouseABC
@@ -46,6 +47,7 @@ namespace CoffeeHouseABC
         {
             ToggleMenu();
         }
+        
         private void btnDanhGia_Click(object sender, EventArgs e)
         {
             LoadUserControl(new UC_Estimate());
@@ -56,8 +58,24 @@ namespace CoffeeHouseABC
             LoadUserControl(new UC_Account());
         }
 
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(
+                "Bạn có chắc chắn muốn đăng xuất?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
-        
+            if (result == DialogResult.Yes)
+            {
+                SessionManager.Logout();
+                
+                Login.Login loginForm = new Login.Login();
+                loginForm.Show();
+                this.Close();
+            }
+        }
+
         private void ToggleMenu()
         {
             if (!isCollapsed)
@@ -76,6 +94,7 @@ namespace CoffeeHouseABC
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.BringToFront();
         }
+        
         private void CollapseAllButtons()
         {
             foreach (var ctrl in guna2Panel3.Controls)
@@ -90,9 +109,9 @@ namespace CoffeeHouseABC
                 }
             }
         }
+        
         private void ExpandAllButtons()
         {
-            
             btnDanhMuc.Text = "Danh mục";
             btnThucDon.Text = "Thực đơn";
             btnDonHang.Text = "Đơn hàng";

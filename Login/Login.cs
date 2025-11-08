@@ -1,12 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using CoffeeHouseABC.Services;
+using CoffeeHouseABC.Utils;
 
 namespace CoffeeHouseABC.Login
 {
@@ -17,6 +12,47 @@ namespace CoffeeHouseABC.Login
             InitializeComponent();
         }
 
-        
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUsername.Text.Trim();
+            string password = txtPassword.Text;
+
+            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ tên tài khoản và mật khẩu!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning);
+                return;
+            }
+
+            var user = KhachHangService.Login(username, password);
+
+            if (user != null)
+            {
+                SessionManager.CurrentUser = user;
+                MessageBox.Show($"Đăng nhập thành công!\nXin chào {user.TenTaiKhoan}",
+                    "Thành công",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
+
+                HomePage homePage = new HomePage();
+                homePage.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Tên tài khoản hoặc mật khẩu không đúng!",
+                    "Lỗi",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            SignUp signUpForm = new SignUp();
+            signUpForm.ShowDialog();
+        }
     }
 }

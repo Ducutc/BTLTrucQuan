@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CoffeeHouseABC.Services;
+using CoffeeHouseABC.Utils;
 
 namespace CoffeeHouseABC.User_Control
 {
@@ -20,26 +22,51 @@ namespace CoffeeHouseABC.User_Control
 
         private void LoadAccountInfo()
         {
-            txtTenTaiKhoan.Text = "nguyenvana";
-            txtVaiTro.Text = "Khách hàng";
-            txtMatKhau.Text = "********";
-            txtMatKhau.UseSystemPasswordChar = false;
-            txtMatKhauMoi.Text = "";
-            txtMatKhauMoi.UseSystemPasswordChar = true;
-            
-            txtVaiTro.Enabled = false;
-            txtTenTaiKhoan.ReadOnly = true;
+            if (SessionManager.IsLoggedIn() && SessionManager.CurrentUser != null)
+            {
+                txtTenTaiKhoan.Text = SessionManager.CurrentUser.TenTaiKhoan;
+                txtVaiTro.Text = SessionManager.CurrentUser.VaiTro;
+                txtMatKhau.Text = "********";
+                txtMatKhau.UseSystemPasswordChar = false;
+                txtMatKhauMoi.Text = "";
+                txtMatKhauMoi.UseSystemPasswordChar = true;
+                
+                txtVaiTro.Enabled = false;
+                txtTenTaiKhoan.ReadOnly = true;
+            }
         }
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Cập nhật thông tin tài khoản thành công!", 
-                "Thành công", 
-                MessageBoxButtons.OK, 
-                MessageBoxIcon.Information);
-            
-            txtMatKhau.Text = "********";
-            txtMatKhauMoi.Text = "";
+            if (SessionManager.IsLoggedIn() && SessionManager.CurrentUser != null && !string.IsNullOrWhiteSpace(txtMatKhauMoi.Text))
+            {
+                bool success = KhachHangService.DoiMatKhau(SessionManager.CurrentUser.MaKH, txtMatKhauMoi.Text);
+                
+                if (success)
+                {
+                    MessageBox.Show("Cập nhật mật khẩu thành công!", 
+                        "Thành công", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Information);
+                    
+                    txtMatKhau.Text = "********";
+                    txtMatKhauMoi.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Cập nhật mật khẩu thất bại!", 
+                        "Lỗi", 
+                        MessageBoxButtons.OK, 
+                        MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu mới!", 
+                    "Thông báo", 
+                    MessageBoxButtons.OK, 
+                    MessageBoxIcon.Warning);
+            }
         }
     }
 }

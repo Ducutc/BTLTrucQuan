@@ -2,15 +2,8 @@
 {
     partial class SignUp
     {
-        /// <summary>
-        /// Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,244 +15,152 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges13 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges14 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges11 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges12 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
-            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
-            guna2Panel1.SuspendLayout();
-            guna2Panel2.SuspendLayout();
-            SuspendLayout();
-            // 
-            // guna2PictureBox1
-            // 
-            guna2PictureBox1.CustomizableEdges = customizableEdges1;
-            guna2PictureBox1.Dock = DockStyle.Top;
-            guna2PictureBox1.Image = Properties.Resources.Coffeebaner;
-            guna2PictureBox1.ImageRotate = 0F;
-            guna2PictureBox1.Location = new Point(0, 0);
-            guna2PictureBox1.Name = "guna2PictureBox1";
-            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2PictureBox1.Size = new Size(632, 382);
-            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            guna2PictureBox1.TabIndex = 0;
-            guna2PictureBox1.TabStop = false;
-            // 
-            // guna2Panel1
-            // 
-            guna2Panel1.Controls.Add(guna2Button1);
-            guna2Panel1.Controls.Add(guna2Panel2);
-            guna2Panel1.Controls.Add(guna2HtmlLabel1);
-            guna2Panel1.CustomizableEdges = customizableEdges13;
-            guna2Panel1.Dock = DockStyle.Fill;
-            guna2Panel1.Location = new Point(0, 382);
-            guna2Panel1.Name = "guna2Panel1";
-            guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            guna2Panel1.Size = new Size(632, 571);
-            guna2Panel1.TabIndex = 1;
-            // 
-            // guna2HtmlLabel1
-            // 
-            guna2HtmlLabel1.AutoSize = false;
-            guna2HtmlLabel1.BackColor = Color.Transparent;
-            guna2HtmlLabel1.Dock = DockStyle.Top;
-            guna2HtmlLabel1.Font = new Font("Segoe UI", 15F, FontStyle.Bold);
-            guna2HtmlLabel1.Location = new Point(0, 0);
-            guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(632, 75);
-            guna2HtmlLabel1.TabIndex = 1;
-            guna2HtmlLabel1.Text = "Đăng kí";
-            guna2HtmlLabel1.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // guna2Panel2
-            // 
-            guna2Panel2.Controls.Add(guna2TextBox3);
-            guna2Panel2.Controls.Add(guna2HtmlLabel4);
-            guna2Panel2.Controls.Add(guna2TextBox2);
-            guna2Panel2.Controls.Add(guna2TextBox1);
-            guna2Panel2.Controls.Add(guna2HtmlLabel3);
-            guna2Panel2.Controls.Add(guna2HtmlLabel2);
-            guna2Panel2.CustomizableEdges = customizableEdges11;
-            guna2Panel2.Dock = DockStyle.Top;
-            guna2Panel2.Location = new Point(0, 75);
-            guna2Panel2.Name = "guna2Panel2";
-            guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            guna2Panel2.Size = new Size(632, 333);
-            guna2Panel2.TabIndex = 2;
-            // 
-            // guna2TextBox2
-            // 
-            guna2TextBox2.BorderRadius = 15;
-            guna2TextBox2.CustomizableEdges = customizableEdges7;
-            guna2TextBox2.DefaultText = "";
-            guna2TextBox2.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox2.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox2.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox2.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Font = new Font("Segoe UI", 9F);
-            guna2TextBox2.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox2.Location = new Point(47, 175);
-            guna2TextBox2.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox2.Name = "guna2TextBox2";
-            guna2TextBox2.PlaceholderText = "Nhập mật khẩu";
-            guna2TextBox2.SelectedText = "";
-            guna2TextBox2.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            guna2TextBox2.Size = new Size(539, 39);
-            guna2TextBox2.TabIndex = 3;
-            // 
-            // guna2TextBox1
-            // 
-            guna2TextBox1.BorderRadius = 15;
-            guna2TextBox1.CustomizableEdges = customizableEdges9;
-            guna2TextBox1.DefaultText = "";
-            guna2TextBox1.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox1.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox1.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox1.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Font = new Font("Segoe UI", 9F);
-            guna2TextBox1.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox1.Location = new Point(47, 80);
-            guna2TextBox1.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox1.Name = "guna2TextBox1";
-            guna2TextBox1.PlaceholderText = "Nhập tên tài khoản";
-            guna2TextBox1.SelectedText = "";
-            guna2TextBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            guna2TextBox1.Size = new Size(539, 39);
-            guna2TextBox1.TabIndex = 2;
-            // 
-            // guna2HtmlLabel3
-            // 
-            guna2HtmlLabel3.AutoSize = false;
-            guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel3.Location = new Point(47, 126);
-            guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            guna2HtmlLabel3.Size = new Size(144, 42);
-            guna2HtmlLabel3.TabIndex = 1;
-            guna2HtmlLabel3.Text = "Mật khẩu";
-            guna2HtmlLabel3.TextAlignment = ContentAlignment.MiddleLeft;
-            // 
-            // guna2HtmlLabel2
-            // 
-            guna2HtmlLabel2.AutoSize = false;
-            guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel2.Location = new Point(47, 31);
-            guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            guna2HtmlLabel2.Size = new Size(144, 42);
-            guna2HtmlLabel2.TabIndex = 0;
-            guna2HtmlLabel2.Text = "Tài khoản";
-            guna2HtmlLabel2.TextAlignment = ContentAlignment.MiddleLeft;
-            // 
-            // guna2TextBox3
-            // 
-            guna2TextBox3.BorderRadius = 15;
-            guna2TextBox3.CustomizableEdges = customizableEdges5;
-            guna2TextBox3.DefaultText = "";
-            guna2TextBox3.DisabledState.BorderColor = Color.FromArgb(208, 208, 208);
-            guna2TextBox3.DisabledState.FillColor = Color.FromArgb(226, 226, 226);
-            guna2TextBox3.DisabledState.ForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.DisabledState.PlaceholderForeColor = Color.FromArgb(138, 138, 138);
-            guna2TextBox3.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Font = new Font("Segoe UI", 9F);
-            guna2TextBox3.HoverState.BorderColor = Color.FromArgb(94, 148, 255);
-            guna2TextBox3.Location = new Point(47, 270);
-            guna2TextBox3.Margin = new Padding(3, 4, 3, 4);
-            guna2TextBox3.Name = "guna2TextBox3";
-            guna2TextBox3.PlaceholderText = "Nhập mật khẩu";
-            guna2TextBox3.SelectedText = "";
-            guna2TextBox3.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            guna2TextBox3.Size = new Size(539, 39);
-            guna2TextBox3.TabIndex = 5;
-            // 
-            // guna2HtmlLabel4
-            // 
-            guna2HtmlLabel4.AutoSize = false;
-            guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Font = new Font("Segoe UI", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            guna2HtmlLabel4.Location = new Point(47, 221);
-            guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            guna2HtmlLabel4.Size = new Size(167, 42);
-            guna2HtmlLabel4.TabIndex = 4;
-            guna2HtmlLabel4.Text = "Xác nhận mật khẩu";
-            guna2HtmlLabel4.TextAlignment = ContentAlignment.MiddleLeft;
-            // 
-            // guna2Button1
-            // 
-            guna2Button1.BorderRadius = 20;
-            guna2Button1.CustomizableEdges = customizableEdges3;
-            guna2Button1.DisabledState.BorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.CustomBorderColor = Color.DarkGray;
-            guna2Button1.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
-            guna2Button1.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
-            guna2Button1.FillColor = Color.FromArgb(136, 58, 0);
-            guna2Button1.Font = new Font("Segoe UI", 9F);
-            guna2Button1.ForeColor = Color.White;
-            guna2Button1.Location = new Point(223, 441);
-            guna2Button1.Name = "guna2Button1";
-            guna2Button1.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            guna2Button1.Size = new Size(144, 47);
-            guna2Button1.TabIndex = 3;
-            guna2Button1.Text = "Xác nhận";
-            // 
-            // SignUp
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(632, 953);
-            Controls.Add(guna2Panel1);
-            Controls.Add(guna2PictureBox1);
-            Name = "SignUp";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "SignUp";
-            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
-            guna2Panel1.ResumeLayout(false);
-            guna2Panel2.ResumeLayout(false);
-            ResumeLayout(false);
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblConfirmPassword = new System.Windows.Forms.Label();
+            this.txtConfirmPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnCancel = new Guna.UI2.WinForms.Guna2Button();
+            this.SuspendLayout();
+            
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.Location = new System.Drawing.Point(220, 40);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(160, 54);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Đăng ký";
+            
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblUsername.Location = new System.Drawing.Point(100, 130);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(125, 28);
+            this.lblUsername.TabIndex = 1;
+            this.lblUsername.Text = "Tên tài khoản:";
+            
+            this.txtUsername.BorderRadius = 8;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtUsername.Location = new System.Drawing.Point(100, 170);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PasswordChar = '\0';
+            this.txtUsername.PlaceholderText = "Nhập tên tài khoản";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(400, 45);
+            this.txtUsername.TabIndex = 2;
+            
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblPassword.Location = new System.Drawing.Point(100, 230);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(100, 28);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "Mật khẩu:";
+            
+            this.txtPassword.BorderRadius = 8;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtPassword.Location = new System.Drawing.Point(100, 270);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '●';
+            this.txtPassword.PlaceholderText = "Nhập mật khẩu (tối thiểu 8 ký tự)";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.Size = new System.Drawing.Size(400, 45);
+            this.txtPassword.TabIndex = 4;
+            
+            this.lblConfirmPassword.AutoSize = true;
+            this.lblConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.lblConfirmPassword.Location = new System.Drawing.Point(100, 330);
+            this.lblConfirmPassword.Name = "lblConfirmPassword";
+            this.lblConfirmPassword.Size = new System.Drawing.Size(175, 28);
+            this.lblConfirmPassword.TabIndex = 5;
+            this.lblConfirmPassword.Text = "Xác nhận mật khẩu:";
+            
+            this.txtConfirmPassword.BorderRadius = 8;
+            this.txtConfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtConfirmPassword.DefaultText = "";
+            this.txtConfirmPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.txtConfirmPassword.Location = new System.Drawing.Point(100, 370);
+            this.txtConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtConfirmPassword.Name = "txtConfirmPassword";
+            this.txtConfirmPassword.PasswordChar = '●';
+            this.txtConfirmPassword.PlaceholderText = "Nhập lại mật khẩu";
+            this.txtConfirmPassword.SelectedText = "";
+            this.txtConfirmPassword.Size = new System.Drawing.Size(400, 45);
+            this.txtConfirmPassword.TabIndex = 6;
+            
+            this.btnSignUp.BorderRadius = 8;
+            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(85)))), ((int)(((byte)(40)))));
+            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSignUp.ForeColor = System.Drawing.Color.White;
+            this.btnSignUp.Location = new System.Drawing.Point(100, 450);
+            this.btnSignUp.Name = "btnSignUp";
+            this.btnSignUp.Size = new System.Drawing.Size(190, 50);
+            this.btnSignUp.TabIndex = 7;
+            this.btnSignUp.Text = "Đăng ký";
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            
+            this.btnCancel.BorderRadius = 8;
+            this.btnCancel.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCancel.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCancel.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCancel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
+            this.btnCancel.Location = new System.Drawing.Point(310, 450);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(190, 50);
+            this.btnCancel.TabIndex = 8;
+            this.btnCancel.Text = "Hủy";
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(600, 550);
+            this.Controls.Add(this.btnCancel);
+            this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.txtConfirmPassword);
+            this.Controls.Add(this.lblConfirmPassword);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.lblUsername);
+            this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.Name = "SignUp";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Đăng ký - Coffee House ABC";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label lblUsername;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private System.Windows.Forms.Label lblConfirmPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtConfirmPassword;
+        private Guna.UI2.WinForms.Guna2Button btnSignUp;
+        private Guna.UI2.WinForms.Guna2Button btnCancel;
     }
 }
