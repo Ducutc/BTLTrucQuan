@@ -2,6 +2,10 @@
 using CoffeeHouseABC.User_Control;
 using CoffeeHouseABC.Utils;
 using Guna.UI2.WinForms;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace CoffeeHouseABC
 {
@@ -9,13 +13,24 @@ namespace CoffeeHouseABC
     {
         private bool isCollapsed = false;
 
+        // 🔹 Cho phép null để tránh CS8618
+        private UC_Menu? _ucMenu;
+
+        private List<ChiTietDonHang> _gioHang = new();
+        private List<string> _tenSP = new();
+
         public HomePage()
         {
             InitializeComponent();
         }
 
-        private List<ChiTietDonHang> _gioHang = new();
-        private List<string> _tenSP = new();
+        // 🔹 Khi cần chuyển sang tab "Đơn hàng"
+        public void ChuyenSangDonHang()
+        {
+            btnDonHang.PerformClick();
+        }
+
+        // 🔹 Cập nhật giỏ hàng (từ UC_Menu)
         public void CapNhatGioHang(List<ChiTietDonHang> ds, List<string> tenSP)
         {
             _gioHang = ds;
@@ -23,14 +38,18 @@ namespace CoffeeHouseABC
 
             LoadUserControl(new UC_Order(_gioHang, _tenSP));
         }
+
         private void Form1_Load(object sender, EventArgs e)
         {
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.BringToFront();
 
-            LoadUserControl(new UC_ItemSanPham());
+            // 🔹 Khởi tạo menu một lần duy nhất
+            _ucMenu = new UC_Menu();
+            LoadUserControl(_ucMenu);
         }
 
+        // 🔹 Hàm nạp UserControl chung
         private void LoadUserControl(UserControl uc)
         {
             uc.Dock = DockStyle.Fill;
@@ -40,7 +59,11 @@ namespace CoffeeHouseABC
 
         private void btnThucDon_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new UC_Menu());
+            // Nếu menu chưa khởi tạo thì tạo mới
+            if (_ucMenu == null)
+                _ucMenu = new UC_Menu();
+
+            LoadUserControl(_ucMenu);
         }
 
         private void btnLichSuMuaHang_Click(object sender, EventArgs e)
@@ -93,6 +116,7 @@ namespace CoffeeHouseABC
             }
         }
 
+        // 🔹 Ẩn / hiện menu trái
         private void ToggleMenu()
         {
             if (!isCollapsed)
@@ -152,10 +176,10 @@ namespace CoffeeHouseABC
         private void btnDangXuat_Click_1(object sender, EventArgs e)
         {
             var confirm = MessageBox.Show(
-        "Bạn có chắc muốn đăng xuất không?",
-        "Xác nhận",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Question);
+                "Bạn có chắc muốn đăng xuất không?",
+                "Xác nhận",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question);
 
             if (confirm == DialogResult.Yes)
             {
@@ -163,7 +187,6 @@ namespace CoffeeHouseABC
 
                 Login.Login loginForm = new Login.Login();
                 loginForm.Show();
-
                 this.Close();
             }
         }

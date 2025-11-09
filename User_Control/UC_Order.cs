@@ -10,14 +10,14 @@ namespace CoffeeHouseABC.User_Control
         private List<ChiTietDonHang> _ds = new();
         private List<string> _tenSP = new();
 
-        // ✅ Constructor rỗng (dùng khi mở Đơn hàng mà chưa chọn gì)
+        // Constructor rỗng (dùng khi mở Đơn hàng mà chưa chọn gì)
         public UC_Order()
         {
             InitializeComponent();
             HienThiTrangThaiTrong();
         }
 
-        // ✅ Constructor có dữ liệu
+        //  Constructor có dữ liệu
         public UC_Order(List<ChiTietDonHang> ds, List<string> tenSP)
         {
             InitializeComponent();
@@ -27,7 +27,7 @@ namespace CoffeeHouseABC.User_Control
             LoadOrder();
         }
 
-        // ✅ Khi chưa có đơn hàng
+        //  Khi chưa có đơn hàng
         private void HienThiTrangThaiTrong()
         {
             panelList.Controls.Clear();
@@ -46,7 +46,7 @@ namespace CoffeeHouseABC.User_Control
             lblTongTien.Text = "Tổng: 0 VNĐ";
         }
 
-        // ✅ Load danh sách đơn hàng
+        // load danh sách đơn hàng
         private void LoadOrder()
         {
             panelList.Controls.Clear();

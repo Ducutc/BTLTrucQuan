@@ -61,11 +61,14 @@ namespace CoffeeHouseABC.User_Control
                 return;
             }
 
-            // ✅ Lấy HomePage (form cha)
+            
             HomePage home = this.FindForm() as HomePage;
             if (home != null)
             {
                 home.CapNhatGioHang(ds, tenSP);
+
+                // chuyển trang + highlight nút Đơn hàng
+                home.ChuyenSangDonHang();
             }
         }
     }
