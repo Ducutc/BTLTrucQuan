@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Windows.Forms;
-using CoffeeHouseABC.Services;
+using CoffeeHouseABC.Database;     // để dùng DatabaseConnection
+
+// hoặc để đúng chỗ bạn đã đặt DatabaseService
+// using CoffeeHouseABC.Data;
 
 namespace CoffeeHouseABC.Login
 {
@@ -17,6 +20,7 @@ namespace CoffeeHouseABC.Login
             string password = txtPassword.Text;
             string confirmPassword = txtConfirmPassword.Text;
 
+            // kiểm tra rỗng
             if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(password))
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!",
@@ -26,6 +30,7 @@ namespace CoffeeHouseABC.Login
                 return;
             }
 
+            // kiểm tra độ dài mật khẩu
             if (password.Length < 8)
             {
                 MessageBox.Show("Mật khẩu phải có ít nhất 8 ký tự!",
@@ -35,6 +40,7 @@ namespace CoffeeHouseABC.Login
                 return;
             }
 
+            // kiểm tra xác nhận
             if (password != confirmPassword)
             {
                 MessageBox.Show("Mật khẩu xác nhận không khớp!",
@@ -44,7 +50,9 @@ namespace CoffeeHouseABC.Login
                 return;
             }
 
-            bool success = KhachHangService.DangKy(username, password);
+            // gọi DatabaseService
+            DatabaseService db = new DatabaseService();
+            bool success = db.Register(username, password);
 
             if (success)
             {
@@ -52,20 +60,18 @@ namespace CoffeeHouseABC.Login
                     "Thành công",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
+
                 this.Close();
             }
             else
             {
-                MessageBox.Show("Đăng ký thất bại!\nTên tài khoản có thể đã tồn tại.",
+                MessageBox.Show("Tên tài khoản đã tồn tại!",
                     "Lỗi",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
     }
 }

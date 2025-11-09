@@ -143,6 +143,7 @@ namespace CoffeeHouseABC
             btnDangXuat.Text = "Đăng xuất";
             btnDangXuat.TextAlign = HorizontalAlignment.Left;
             btnDangXuat.TextOffset = new Point(30, 0);
+            btnDangXuat.Click += btnDangXuat_Click_1;
             // 
             // btnDanhMuc
             // 
@@ -203,7 +204,6 @@ namespace CoffeeHouseABC
             btnDonHang.Animated = true;
             btnDonHang.BorderRadius = 10;
             btnDonHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnDonHang.CustomImages.HoveredImage = Properties.Resources.sendw;
             btnDonHang.CustomImages.Image = Properties.Resources.send;
             btnDonHang.CustomImages.ImageAlign = HorizontalAlignment.Left;
             btnDonHang.CustomImages.ImageSize = new Size(30, 30);
@@ -234,8 +234,6 @@ namespace CoffeeHouseABC
             btnLichSuMuaHang.Animated = true;
             btnLichSuMuaHang.BorderRadius = 10;
             btnLichSuMuaHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnLichSuMuaHang.CustomImages.HoveredImage = Properties.Resources.sendw;
-            btnLichSuMuaHang.CustomImages.Image = Properties.Resources.send;
             btnLichSuMuaHang.CustomImages.ImageAlign = HorizontalAlignment.Left;
             btnLichSuMuaHang.CustomizableEdges = customizableEdges11;
             btnLichSuMuaHang.DisabledState.BorderColor = Color.DarkGray;
@@ -263,8 +261,6 @@ namespace CoffeeHouseABC
             btnDanhGia.Animated = true;
             btnDanhGia.BorderRadius = 10;
             btnDanhGia.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
-            btnDanhGia.CustomImages.HoveredImage = Properties.Resources.sendw;
-            btnDanhGia.CustomImages.Image = Properties.Resources.send;
             btnDanhGia.CustomImages.ImageAlign = HorizontalAlignment.Left;
             btnDanhGia.CustomizableEdges = customizableEdges13;
             btnDanhGia.DisabledState.BorderColor = Color.DarkGray;
@@ -349,7 +345,6 @@ namespace CoffeeHouseABC
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
-        private Guna.UI2.WinForms.Guna2Panel panelContainer;
         private Guna.UI2.WinForms.Guna2Button btnThucDon;
         private Guna.UI2.WinForms.Guna2Button btnDangXuat;
         private Guna.UI2.WinForms.Guna2Button btnThongTinTaiKhoan;
@@ -358,6 +353,7 @@ namespace CoffeeHouseABC
         private Guna.UI2.WinForms.Guna2Button btnDanhGia;
         private Guna2Button btnDanhMuc;
         private Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna2Panel panelContainer;
     }
 
 }

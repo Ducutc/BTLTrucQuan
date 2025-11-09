@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CoffeeHouseABC.Services;
+
 using CoffeeHouseABC.Utils;
+using CoffeeHouseABC.Database;   // thêm thư viện DatabaseService
 
 namespace CoffeeHouseABC.User_Control
 {
@@ -23,9 +17,9 @@ namespace CoffeeHouseABC.User_Control
         {
             if (!SessionManager.IsLoggedIn() || SessionManager.CurrentUser == null)
             {
-                MessageBox.Show("Vui lòng đăng nhập để gửi đánh giá!", 
-                    "Thông báo", 
-                    MessageBoxButtons.OK, 
+                MessageBox.Show("Vui lòng đăng nhập để gửi đánh giá!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
@@ -37,14 +31,16 @@ namespace CoffeeHouseABC.User_Control
 
             if (diemPhucVu == 0 || diemChatLuong == 0 || diemKhongGian == 0 || diemDaDang == 0)
             {
-                MessageBox.Show("Vui lòng chọn đầy đủ các mục đánh giá!", 
-                    "Thông báo", 
-                    MessageBoxButtons.OK, 
+                MessageBox.Show("Vui lòng chọn đầy đủ các mục đánh giá!",
+                    "Thông báo",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
                 return;
             }
 
-            bool success = DanhGiaService.ThemDanhGia(
+            DatabaseService db = new DatabaseService();
+
+            bool success = db.ThemDanhGia(
                 SessionManager.CurrentUser.MaKH,
                 diemPhucVu,
                 diemChatLuong,
@@ -55,18 +51,18 @@ namespace CoffeeHouseABC.User_Control
 
             if (success)
             {
-                MessageBox.Show("Cảm ơn bạn đã gửi đánh giá!", 
-                    "Thành công", 
-                    MessageBoxButtons.OK, 
+                MessageBox.Show("Cảm ơn bạn đã gửi đánh giá!",
+                    "Thành công",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
-                
+
                 ResetForm();
             }
             else
             {
-                MessageBox.Show("Có lỗi xảy ra khi gửi đánh giá!", 
-                    "Lỗi", 
-                    MessageBoxButtons.OK, 
+                MessageBox.Show("Có lỗi xảy ra khi gửi đánh giá!",
+                    "Lỗi",
+                    MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
             }
         }
@@ -113,30 +109,11 @@ namespace CoffeeHouseABC.User_Control
 
         private void ResetForm()
         {
-            rbThaiDo1.Checked = false;
-            rbThaiDo2.Checked = false;
-            rbThaiDo3.Checked = false;
-            rbThaiDo4.Checked = false;
-            rbThaiDo5.Checked = false;
-            
-            rbChatLuong1.Checked = false;
-            rbChatLuong2.Checked = false;
-            rbChatLuong3.Checked = false;
-            rbChatLuong4.Checked = false;
-            rbChatLuong5.Checked = false;
-            
-            rbKhongGian1.Checked = false;
-            rbKhongGian2.Checked = false;
-            rbKhongGian3.Checked = false;
-            rbKhongGian4.Checked = false;
-            rbKhongGian5.Checked = false;
-            
-            rbDoDaDang1.Checked = false;
-            rbDoDaDang2.Checked = false;
-            rbDoDaDang3.Checked = false;
-            rbDoDaDang4.Checked = false;
-            rbDoDaDang5.Checked = false;
-            
+            rbThaiDo1.Checked = rbThaiDo2.Checked = rbThaiDo3.Checked = rbThaiDo4.Checked = rbThaiDo5.Checked = false;
+            rbChatLuong1.Checked = rbChatLuong2.Checked = rbChatLuong3.Checked = rbChatLuong4.Checked = rbChatLuong5.Checked = false;
+            rbKhongGian1.Checked = rbKhongGian2.Checked = rbKhongGian3.Checked = rbKhongGian4.Checked = rbKhongGian5.Checked = false;
+            rbDoDaDang1.Checked = rbDoDaDang2.Checked = rbDoDaDang3.Checked = rbDoDaDang4.Checked = rbDoDaDang5.Checked = false;
+
             txtGopY.Text = "";
         }
     }

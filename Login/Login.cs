@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
-using CoffeeHouseABC.Services;
-using CoffeeHouseABC.Utils;
+
+using CoffeeHouseABC.Database;   // để dùng DatabaseService
+using CoffeeHouseABC.Utils;      // SessionManager
 
 namespace CoffeeHouseABC.Login
 {
@@ -26,11 +27,14 @@ namespace CoffeeHouseABC.Login
                 return;
             }
 
-            var user = KhachHangService.Login(username, password);
+            // gọi DatabaseService để kiểm tra đăng nhập
+            DatabaseService db = new DatabaseService();
+            var user = db.Login(username, password);
 
             if (user != null)
             {
                 SessionManager.CurrentUser = user;
+
                 MessageBox.Show($"Đăng nhập thành công!\nXin chào {user.TenTaiKhoan}",
                     "Thành công",
                     MessageBoxButtons.OK,

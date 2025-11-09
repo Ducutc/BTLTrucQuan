@@ -83,6 +83,36 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cfden {
+            get {
+                object obj = ResourceManager.GetObject("cfden", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cfsuada {
+            get {
+                object obj = ResourceManager.GetObject("cfsuada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cheesecake {
+            get {
+                object obj = ResourceManager.GetObject("cheesecake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap coffee {
             get {
                 object obj = ResourceManager.GetObject("coffee", resourceCulture);
@@ -96,6 +126,16 @@ namespace CoffeeHouseABC.Properties {
         internal static System.Drawing.Bitmap Coffeebaner {
             get {
                 object obj = ResourceManager.GetObject("Coffeebaner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap default_image {
+            get {
+                object obj = ResourceManager.GetObject("default_image", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -133,6 +173,16 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap matcha {
+            get {
+                object obj = ResourceManager.GetObject("matcha", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Menushop {
             get {
                 object obj = ResourceManager.GetObject("Menushop", resourceCulture);
@@ -163,9 +213,9 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap sendw {
+        internal static System.Drawing.Bitmap taskbar {
             get {
-                object obj = ResourceManager.GetObject("sendw", resourceCulture);
+                object obj = ResourceManager.GetObject("taskbar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,9 +223,9 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap taskbar {
+        internal static System.Drawing.Bitmap tradao {
             get {
-                object obj = ResourceManager.GetObject("taskbar", resourceCulture);
+                object obj = ResourceManager.GetObject("tradao", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

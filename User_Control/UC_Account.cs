@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CoffeeHouseABC.Services;
+
 using CoffeeHouseABC.Utils;
+using CoffeeHouseABC.Database;   // thêm dòng này
 
 namespace CoffeeHouseABC.User_Control
 {
@@ -26,11 +20,13 @@ namespace CoffeeHouseABC.User_Control
             {
                 txtTenTaiKhoan.Text = SessionManager.CurrentUser.TenTaiKhoan;
                 txtVaiTro.Text = SessionManager.CurrentUser.VaiTro;
+
                 txtMatKhau.Text = "********";
                 txtMatKhau.UseSystemPasswordChar = false;
+
                 txtMatKhauMoi.Text = "";
                 txtMatKhauMoi.UseSystemPasswordChar = true;
-                
+
                 txtVaiTro.Enabled = false;
                 txtTenTaiKhoan.ReadOnly = true;
             }
@@ -38,34 +34,36 @@ namespace CoffeeHouseABC.User_Control
 
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-            if (SessionManager.IsLoggedIn() && SessionManager.CurrentUser != null && !string.IsNullOrWhiteSpace(txtMatKhauMoi.Text))
+            if (!SessionManager.IsLoggedIn() || SessionManager.CurrentUser == null)
             {
-                bool success = KhachHangService.DoiMatKhau(SessionManager.CurrentUser.MaKH, txtMatKhauMoi.Text);
-                
-                if (success)
-                {
-                    MessageBox.Show("Cập nhật mật khẩu thành công!", 
-                        "Thành công", 
-                        MessageBoxButtons.OK, 
-                        MessageBoxIcon.Information);
-                    
-                    txtMatKhau.Text = "********";
-                    txtMatKhauMoi.Text = "";
-                }
-                else
-                {
-                    MessageBox.Show("Cập nhật mật khẩu thất bại!", 
-                        "Lỗi", 
-                        MessageBoxButtons.OK, 
-                        MessageBoxIcon.Error);
-                }
+                MessageBox.Show("Bạn chưa đăng nhập!", "Thông báo",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (string.IsNullOrWhiteSpace(txtMatKhauMoi.Text))
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu mới!",
+                    "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DatabaseService db = new DatabaseService();
+
+            bool success = db.DoiMatKhau(SessionManager.CurrentUser.MaKH, txtMatKhauMoi.Text);
+
+            if (success)
+            {
+                MessageBox.Show("Cập nhật mật khẩu thành công!",
+                    "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                txtMatKhau.Text = "********";
+                txtMatKhauMoi.Text = "";
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập mật khẩu mới!", 
-                    "Thông báo", 
-                    MessageBoxButtons.OK, 
-                    MessageBoxIcon.Warning);
+                MessageBox.Show("Cập nhật mật khẩu thất bại!",
+                    "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

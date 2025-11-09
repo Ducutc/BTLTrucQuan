@@ -17,123 +17,164 @@
 
         private void InitializeComponent()
         {
-            this.lblTitle = new System.Windows.Forms.Label();
-            this.lblUsername = new System.Windows.Forms.Label();
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblPassword = new System.Windows.Forms.Label();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSignUp = new Guna.UI2.WinForms.Guna2Button();
-            this.lblSignUpPrompt = new System.Windows.Forms.Label();
-            this.SuspendLayout();
-            
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold);
-            this.lblTitle.Location = new System.Drawing.Point(200, 50);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(200, 54);
-            this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Đăng nhập";
-            
-            this.lblUsername.AutoSize = true;
-            this.lblUsername.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblUsername.Location = new System.Drawing.Point(100, 150);
-            this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(125, 28);
-            this.lblUsername.TabIndex = 1;
-            this.lblUsername.Text = "Tên tài khoản:";
-            
-            this.txtUsername.BorderRadius = 8;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtUsername.Location = new System.Drawing.Point(100, 190);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PasswordChar = '\0';
-            this.txtUsername.PlaceholderText = "Nhập tên tài khoản";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(400, 45);
-            this.txtUsername.TabIndex = 2;
-            
-            this.lblPassword.AutoSize = true;
-            this.lblPassword.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.lblPassword.Location = new System.Drawing.Point(100, 250);
-            this.lblPassword.Name = "lblPassword";
-            this.lblPassword.Size = new System.Drawing.Size(100, 28);
-            this.lblPassword.TabIndex = 3;
-            this.lblPassword.Text = "Mật khẩu:";
-            
-            this.txtPassword.BorderRadius = 8;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.txtPassword.Location = new System.Drawing.Point(100, 290);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '●';
-            this.txtPassword.PlaceholderText = "Nhập mật khẩu";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(400, 45);
-            this.txtPassword.TabIndex = 4;
-            
-            this.btnLogin.BorderRadius = 8;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(85)))), ((int)(((byte)(40)))));
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(100, 370);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(400, 50);
-            this.btnLogin.TabIndex = 5;
-            this.btnLogin.Text = "Đăng nhập";
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            
-            this.lblSignUpPrompt.AutoSize = true;
-            this.lblSignUpPrompt.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.lblSignUpPrompt.Location = new System.Drawing.Point(150, 450);
-            this.lblSignUpPrompt.Name = "lblSignUpPrompt";
-            this.lblSignUpPrompt.Size = new System.Drawing.Size(180, 23);
-            this.lblSignUpPrompt.TabIndex = 6;
-            this.lblSignUpPrompt.Text = "Chưa có tài khoản?";
-            
-            this.btnSignUp.BorderRadius = 8;
-            this.btnSignUp.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUp.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSignUp.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSignUp.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSignUp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.btnSignUp.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.btnSignUp.ForeColor = System.Drawing.Color.White;
-            this.btnSignUp.Location = new System.Drawing.Point(340, 445);
-            this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(120, 35);
-            this.btnSignUp.TabIndex = 7;
-            this.btnSignUp.Text = "Đăng ký";
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(600, 550);
-            this.Controls.Add(this.btnSignUp);
-            this.Controls.Add(this.lblSignUpPrompt);
-            this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.txtPassword);
-            this.Controls.Add(this.lblPassword);
-            this.Controls.Add(this.txtUsername);
-            this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.lblTitle);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.MaximizeBox = false;
-            this.Name = "Login";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng nhập - Coffee House ABC";
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges1 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges2 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges3 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges4 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges5 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges6 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges7 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges8 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges9 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            Guna.UI2.WinForms.Suite.CustomizableEdges customizableEdges10 = new Guna.UI2.WinForms.Suite.CustomizableEdges();
+            lblTitle = new Label();
+            lblUsername = new Label();
+            txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
+            lblPassword = new Label();
+            txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
+            btnLogin = new Guna.UI2.WinForms.Guna2Button();
+            btnSignUp = new Guna.UI2.WinForms.Guna2Button();
+            guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).BeginInit();
+            SuspendLayout();
+            // 
+            // lblTitle
+            // 
+            lblTitle.AutoSize = true;
+            lblTitle.Font = new Font("Segoe UI", 24F, FontStyle.Bold);
+            lblTitle.Location = new Point(264, 323);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(230, 54);
+            lblTitle.TabIndex = 0;
+            lblTitle.Text = "Đăng nhập";
+            // 
+            // lblUsername
+            // 
+            lblUsername.AutoSize = true;
+            lblUsername.Font = new Font("Segoe UI", 12F);
+            lblUsername.Location = new Point(66, 415);
+            lblUsername.Name = "lblUsername";
+            lblUsername.Size = new Size(131, 28);
+            lblUsername.TabIndex = 1;
+            lblUsername.Text = "Tên tài khoản:";
+            // 
+            // txtUsername
+            // 
+            txtUsername.BorderRadius = 8;
+            txtUsername.Cursor = Cursors.IBeam;
+            txtUsername.CustomizableEdges = customizableEdges1;
+            txtUsername.DefaultText = "";
+            txtUsername.Font = new Font("Segoe UI", 11F);
+            txtUsername.Location = new Point(66, 464);
+            txtUsername.Margin = new Padding(4, 5, 4, 5);
+            txtUsername.Name = "txtUsername";
+            txtUsername.PlaceholderText = "Nhập tên tài khoản";
+            txtUsername.SelectedText = "";
+            txtUsername.ShadowDecoration.CustomizableEdges = customizableEdges2;
+            txtUsername.Size = new Size(581, 45);
+            txtUsername.TabIndex = 2;
+            // 
+            // lblPassword
+            // 
+            lblPassword.AutoSize = true;
+            lblPassword.Font = new Font("Segoe UI", 12F);
+            lblPassword.Location = new Point(66, 535);
+            lblPassword.Name = "lblPassword";
+            lblPassword.Size = new Size(98, 28);
+            lblPassword.TabIndex = 3;
+            lblPassword.Text = "Mật khẩu:";
+            // 
+            // txtPassword
+            // 
+            txtPassword.BorderRadius = 8;
+            txtPassword.Cursor = Cursors.IBeam;
+            txtPassword.CustomizableEdges = customizableEdges3;
+            txtPassword.DefaultText = "";
+            txtPassword.Font = new Font("Segoe UI", 11F);
+            txtPassword.Location = new Point(66, 597);
+            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.Name = "txtPassword";
+            txtPassword.PasswordChar = '●';
+            txtPassword.PlaceholderText = "Nhập mật khẩu";
+            txtPassword.SelectedText = "";
+            txtPassword.ShadowDecoration.CustomizableEdges = customizableEdges4;
+            txtPassword.Size = new Size(581, 45);
+            txtPassword.TabIndex = 4;
+            // 
+            // btnLogin
+            // 
+            btnLogin.BorderRadius = 8;
+            btnLogin.CustomizableEdges = customizableEdges5;
+            btnLogin.DisabledState.BorderColor = Color.DarkGray;
+            btnLogin.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnLogin.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnLogin.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnLogin.FillColor = Color.FromArgb(165, 85, 40);
+            btnLogin.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            btnLogin.ForeColor = Color.White;
+            btnLogin.Location = new Point(146, 718);
+            btnLogin.Name = "btnLogin";
+            btnLogin.ShadowDecoration.CustomizableEdges = customizableEdges6;
+            btnLogin.Size = new Size(137, 50);
+            btnLogin.TabIndex = 5;
+            btnLogin.Text = "Đăng nhập";
+            btnLogin.Click += btnLogin_Click;
+            // 
+            // btnSignUp
+            // 
+            btnSignUp.BorderRadius = 8;
+            btnSignUp.CustomizableEdges = customizableEdges7;
+            btnSignUp.DisabledState.BorderColor = Color.DarkGray;
+            btnSignUp.DisabledState.CustomBorderColor = Color.DarkGray;
+            btnSignUp.DisabledState.FillColor = Color.FromArgb(169, 169, 169);
+            btnSignUp.DisabledState.ForeColor = Color.FromArgb(141, 141, 141);
+            btnSignUp.FillColor = Color.FromArgb(165, 85, 40);
+            btnSignUp.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            btnSignUp.ForeColor = Color.White;
+            btnSignUp.Location = new Point(415, 718);
+            btnSignUp.Name = "btnSignUp";
+            btnSignUp.ShadowDecoration.CustomizableEdges = customizableEdges8;
+            btnSignUp.Size = new Size(137, 50);
+            btnSignUp.TabIndex = 5;
+            btnSignUp.Text = "Đăng ký";
+            btnSignUp.Click += btnSignUp_Click;
+            // 
+            // guna2PictureBox1
+            // 
+            guna2PictureBox1.CustomizableEdges = customizableEdges9;
+            guna2PictureBox1.Dock = DockStyle.Top;
+            guna2PictureBox1.Image = Properties.Resources.Coffeebaner;
+            guna2PictureBox1.ImageRotate = 0F;
+            guna2PictureBox1.Location = new Point(0, 0);
+            guna2PictureBox1.Name = "guna2PictureBox1";
+            guna2PictureBox1.ShadowDecoration.CustomizableEdges = customizableEdges10;
+            guna2PictureBox1.Size = new Size(753, 258);
+            guna2PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            guna2PictureBox1.TabIndex = 6;
+            guna2PictureBox1.TabStop = false;
+            // 
+            // Login
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.White;
+            ClientSize = new Size(753, 879);
+            Controls.Add(guna2PictureBox1);
+            Controls.Add(btnSignUp);
+            Controls.Add(btnLogin);
+            Controls.Add(txtPassword);
+            Controls.Add(lblPassword);
+            Controls.Add(txtUsername);
+            Controls.Add(lblUsername);
+            Controls.Add(lblTitle);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
+            MaximizeBox = false;
+            Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Đăng nhập - Coffee House ABC";
+            ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -145,6 +186,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2Button btnSignUp;
-        private System.Windows.Forms.Label lblSignUpPrompt;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }
