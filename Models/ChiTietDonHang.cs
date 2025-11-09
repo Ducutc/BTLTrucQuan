@@ -6,5 +6,6 @@ namespace CoffeeHouseABC.Models
         public int MaSP { get; set; }
         public int SoLuong { get; set; }
         public decimal DonGiaBan { get; set; }
+        public string? HinhAnh { get; set; }
     }
 }

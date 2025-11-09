@@ -48,7 +48,8 @@ namespace CoffeeHouseABC.User_Control
                     {
                         MaSP = item.SanPham.MaSP,
                         SoLuong = item.SoLuong,
-                        DonGiaBan = item.SanPham.Gia
+                        DonGiaBan = item.SanPham.Gia,
+                        HinhAnh = item.SanPham.HinhAnh
                     });
 
                     tenSP.Add(item.SanPham.TenSP);

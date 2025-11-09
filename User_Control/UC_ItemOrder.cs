@@ -23,14 +23,14 @@ namespace CoffeeHouseABC.User_Control
 
             try
             {
-                guna2PictureBox1.Image =
-                    Properties.Resources.ResourceManager.GetObject(ct.MaSP.ToString()) as Image
-                    ?? Properties.Resources.coffee;
+                var img = Properties.Resources.ResourceManager.GetObject(ct.HinhAnh);
+                guna2PictureBox1.Image = img as Image ?? Properties.Resources.coffee;
             }
             catch
             {
                 guna2PictureBox1.Image = Properties.Resources.coffee;
             }
+
         }
     }
 }
