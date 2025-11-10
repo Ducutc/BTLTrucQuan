@@ -124,11 +124,17 @@
   <data name="accountw" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\accountw.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="bacxiu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bacxiu.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cfden" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cfden.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cfsuada" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cfsuada.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cftrung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cftrung.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cheesecake" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\cheesecake.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

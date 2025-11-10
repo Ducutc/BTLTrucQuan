@@ -96,7 +96,7 @@
             lblTitle.Anchor = AnchorStyles.Top;
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
-            lblTitle.Location = new Point(362, 38);
+            lblTitle.Location = new Point(540, 38);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(707, 46);
             lblTitle.TabIndex = 0;
@@ -107,7 +107,7 @@
             lblThaiDoPhucVu.Anchor = AnchorStyles.Top;
             lblThaiDoPhucVu.AutoSize = true;
             lblThaiDoPhucVu.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblThaiDoPhucVu.Location = new Point(212, 150);
+            lblThaiDoPhucVu.Location = new Point(390, 150);
             lblThaiDoPhucVu.Name = "lblThaiDoPhucVu";
             lblThaiDoPhucVu.Size = new Size(259, 25);
             lblThaiDoPhucVu.TabIndex = 1;
@@ -120,7 +120,7 @@
             rbThaiDo1.CheckedState.BorderThickness = 0;
             rbThaiDo1.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbThaiDo1.CheckedState.InnerColor = Color.White;
-            rbThaiDo1.Location = new Point(712, 146);
+            rbThaiDo1.Location = new Point(890, 146);
             rbThaiDo1.Margin = new Padding(3, 4, 3, 4);
             rbThaiDo1.Name = "rbThaiDo1";
             rbThaiDo1.ShadowDecoration.CustomizableEdges = customizableEdges1;
@@ -137,7 +137,7 @@
             rbThaiDo2.CheckedState.BorderThickness = 0;
             rbThaiDo2.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbThaiDo2.CheckedState.InnerColor = Color.White;
-            rbThaiDo2.Location = new Point(782, 146);
+            rbThaiDo2.Location = new Point(960, 146);
             rbThaiDo2.Margin = new Padding(3, 4, 3, 4);
             rbThaiDo2.Name = "rbThaiDo2";
             rbThaiDo2.ShadowDecoration.CustomizableEdges = customizableEdges2;
@@ -154,7 +154,7 @@
             rbThaiDo3.CheckedState.BorderThickness = 0;
             rbThaiDo3.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbThaiDo3.CheckedState.InnerColor = Color.White;
-            rbThaiDo3.Location = new Point(852, 146);
+            rbThaiDo3.Location = new Point(1030, 146);
             rbThaiDo3.Margin = new Padding(3, 4, 3, 4);
             rbThaiDo3.Name = "rbThaiDo3";
             rbThaiDo3.ShadowDecoration.CustomizableEdges = customizableEdges3;
@@ -171,7 +171,7 @@
             rbThaiDo4.CheckedState.BorderThickness = 0;
             rbThaiDo4.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbThaiDo4.CheckedState.InnerColor = Color.White;
-            rbThaiDo4.Location = new Point(922, 146);
+            rbThaiDo4.Location = new Point(1100, 146);
             rbThaiDo4.Margin = new Padding(3, 4, 3, 4);
             rbThaiDo4.Name = "rbThaiDo4";
             rbThaiDo4.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -188,7 +188,7 @@
             rbThaiDo5.CheckedState.BorderThickness = 0;
             rbThaiDo5.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbThaiDo5.CheckedState.InnerColor = Color.White;
-            rbThaiDo5.Location = new Point(992, 146);
+            rbThaiDo5.Location = new Point(1170, 146);
             rbThaiDo5.Margin = new Padding(3, 4, 3, 4);
             rbThaiDo5.Name = "rbThaiDo5";
             rbThaiDo5.ShadowDecoration.CustomizableEdges = customizableEdges5;
@@ -203,7 +203,7 @@
             lbl1.Anchor = AnchorStyles.Top;
             lbl1.AutoSize = true;
             lbl1.Font = new Font("Segoe UI", 10F);
-            lbl1.Location = new Point(740, 149);
+            lbl1.Location = new Point(918, 149);
             lbl1.Name = "lbl1";
             lbl1.Size = new Size(19, 23);
             lbl1.TabIndex = 7;
@@ -214,7 +214,7 @@
             lbl2.Anchor = AnchorStyles.Top;
             lbl2.AutoSize = true;
             lbl2.Font = new Font("Segoe UI", 10F);
-            lbl2.Location = new Point(810, 149);
+            lbl2.Location = new Point(988, 149);
             lbl2.Name = "lbl2";
             lbl2.Size = new Size(19, 23);
             lbl2.TabIndex = 8;
@@ -225,7 +225,7 @@
             lbl3.Anchor = AnchorStyles.Top;
             lbl3.AutoSize = true;
             lbl3.Font = new Font("Segoe UI", 10F);
-            lbl3.Location = new Point(880, 149);
+            lbl3.Location = new Point(1058, 149);
             lbl3.Name = "lbl3";
             lbl3.Size = new Size(19, 23);
             lbl3.TabIndex = 9;
@@ -236,7 +236,7 @@
             lbl4.Anchor = AnchorStyles.Top;
             lbl4.AutoSize = true;
             lbl4.Font = new Font("Segoe UI", 10F);
-            lbl4.Location = new Point(950, 149);
+            lbl4.Location = new Point(1128, 149);
             lbl4.Name = "lbl4";
             lbl4.Size = new Size(19, 23);
             lbl4.TabIndex = 10;
@@ -247,7 +247,7 @@
             lbl5.Anchor = AnchorStyles.Top;
             lbl5.AutoSize = true;
             lbl5.Font = new Font("Segoe UI", 10F);
-            lbl5.Location = new Point(1020, 149);
+            lbl5.Location = new Point(1198, 149);
             lbl5.Name = "lbl5";
             lbl5.Size = new Size(19, 23);
             lbl5.TabIndex = 11;
@@ -258,7 +258,7 @@
             lblChatLuong.Anchor = AnchorStyles.Top;
             lblChatLuong.AutoSize = true;
             lblChatLuong.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblChatLuong.Location = new Point(212, 225);
+            lblChatLuong.Location = new Point(390, 225);
             lblChatLuong.Name = "lblChatLuong";
             lblChatLuong.Size = new Size(299, 25);
             lblChatLuong.TabIndex = 12;
@@ -271,7 +271,7 @@
             rbChatLuong1.CheckedState.BorderThickness = 0;
             rbChatLuong1.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbChatLuong1.CheckedState.InnerColor = Color.White;
-            rbChatLuong1.Location = new Point(712, 221);
+            rbChatLuong1.Location = new Point(890, 221);
             rbChatLuong1.Margin = new Padding(3, 4, 3, 4);
             rbChatLuong1.Name = "rbChatLuong1";
             rbChatLuong1.ShadowDecoration.CustomizableEdges = customizableEdges6;
@@ -288,7 +288,7 @@
             rbChatLuong2.CheckedState.BorderThickness = 0;
             rbChatLuong2.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbChatLuong2.CheckedState.InnerColor = Color.White;
-            rbChatLuong2.Location = new Point(782, 221);
+            rbChatLuong2.Location = new Point(960, 221);
             rbChatLuong2.Margin = new Padding(3, 4, 3, 4);
             rbChatLuong2.Name = "rbChatLuong2";
             rbChatLuong2.ShadowDecoration.CustomizableEdges = customizableEdges7;
@@ -305,7 +305,7 @@
             rbChatLuong3.CheckedState.BorderThickness = 0;
             rbChatLuong3.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbChatLuong3.CheckedState.InnerColor = Color.White;
-            rbChatLuong3.Location = new Point(852, 221);
+            rbChatLuong3.Location = new Point(1030, 221);
             rbChatLuong3.Margin = new Padding(3, 4, 3, 4);
             rbChatLuong3.Name = "rbChatLuong3";
             rbChatLuong3.ShadowDecoration.CustomizableEdges = customizableEdges8;
@@ -322,7 +322,7 @@
             rbChatLuong4.CheckedState.BorderThickness = 0;
             rbChatLuong4.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbChatLuong4.CheckedState.InnerColor = Color.White;
-            rbChatLuong4.Location = new Point(922, 221);
+            rbChatLuong4.Location = new Point(1100, 221);
             rbChatLuong4.Margin = new Padding(3, 4, 3, 4);
             rbChatLuong4.Name = "rbChatLuong4";
             rbChatLuong4.ShadowDecoration.CustomizableEdges = customizableEdges9;
@@ -339,7 +339,7 @@
             rbChatLuong5.CheckedState.BorderThickness = 0;
             rbChatLuong5.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbChatLuong5.CheckedState.InnerColor = Color.White;
-            rbChatLuong5.Location = new Point(992, 221);
+            rbChatLuong5.Location = new Point(1170, 221);
             rbChatLuong5.Margin = new Padding(3, 4, 3, 4);
             rbChatLuong5.Name = "rbChatLuong5";
             rbChatLuong5.ShadowDecoration.CustomizableEdges = customizableEdges10;
@@ -354,7 +354,7 @@
             lblCL1.Anchor = AnchorStyles.Top;
             lblCL1.AutoSize = true;
             lblCL1.Font = new Font("Segoe UI", 10F);
-            lblCL1.Location = new Point(740, 224);
+            lblCL1.Location = new Point(918, 224);
             lblCL1.Name = "lblCL1";
             lblCL1.Size = new Size(19, 23);
             lblCL1.TabIndex = 18;
@@ -365,7 +365,7 @@
             lblCL2.Anchor = AnchorStyles.Top;
             lblCL2.AutoSize = true;
             lblCL2.Font = new Font("Segoe UI", 10F);
-            lblCL2.Location = new Point(810, 224);
+            lblCL2.Location = new Point(988, 224);
             lblCL2.Name = "lblCL2";
             lblCL2.Size = new Size(19, 23);
             lblCL2.TabIndex = 19;
@@ -376,7 +376,7 @@
             lblCL3.Anchor = AnchorStyles.Top;
             lblCL3.AutoSize = true;
             lblCL3.Font = new Font("Segoe UI", 10F);
-            lblCL3.Location = new Point(880, 224);
+            lblCL3.Location = new Point(1058, 224);
             lblCL3.Name = "lblCL3";
             lblCL3.Size = new Size(19, 23);
             lblCL3.TabIndex = 20;
@@ -387,7 +387,7 @@
             lblCL4.Anchor = AnchorStyles.Top;
             lblCL4.AutoSize = true;
             lblCL4.Font = new Font("Segoe UI", 10F);
-            lblCL4.Location = new Point(950, 224);
+            lblCL4.Location = new Point(1128, 224);
             lblCL4.Name = "lblCL4";
             lblCL4.Size = new Size(19, 23);
             lblCL4.TabIndex = 21;
@@ -398,7 +398,7 @@
             lblCL5.Anchor = AnchorStyles.Top;
             lblCL5.AutoSize = true;
             lblCL5.Font = new Font("Segoe UI", 10F);
-            lblCL5.Location = new Point(1020, 224);
+            lblCL5.Location = new Point(1198, 224);
             lblCL5.Name = "lblCL5";
             lblCL5.Size = new Size(19, 23);
             lblCL5.TabIndex = 22;
@@ -409,7 +409,7 @@
             lblKhongGian.Anchor = AnchorStyles.Top;
             lblKhongGian.AutoSize = true;
             lblKhongGian.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblKhongGian.Location = new Point(212, 300);
+            lblKhongGian.Location = new Point(390, 300);
             lblKhongGian.Name = "lblKhongGian";
             lblKhongGian.Size = new Size(274, 25);
             lblKhongGian.TabIndex = 23;
@@ -422,7 +422,7 @@
             rbKhongGian1.CheckedState.BorderThickness = 0;
             rbKhongGian1.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbKhongGian1.CheckedState.InnerColor = Color.White;
-            rbKhongGian1.Location = new Point(712, 296);
+            rbKhongGian1.Location = new Point(890, 296);
             rbKhongGian1.Margin = new Padding(3, 4, 3, 4);
             rbKhongGian1.Name = "rbKhongGian1";
             rbKhongGian1.ShadowDecoration.CustomizableEdges = customizableEdges11;
@@ -439,7 +439,7 @@
             rbKhongGian2.CheckedState.BorderThickness = 0;
             rbKhongGian2.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbKhongGian2.CheckedState.InnerColor = Color.White;
-            rbKhongGian2.Location = new Point(782, 296);
+            rbKhongGian2.Location = new Point(960, 296);
             rbKhongGian2.Margin = new Padding(3, 4, 3, 4);
             rbKhongGian2.Name = "rbKhongGian2";
             rbKhongGian2.ShadowDecoration.CustomizableEdges = customizableEdges12;
@@ -456,7 +456,7 @@
             rbKhongGian3.CheckedState.BorderThickness = 0;
             rbKhongGian3.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbKhongGian3.CheckedState.InnerColor = Color.White;
-            rbKhongGian3.Location = new Point(852, 296);
+            rbKhongGian3.Location = new Point(1030, 296);
             rbKhongGian3.Margin = new Padding(3, 4, 3, 4);
             rbKhongGian3.Name = "rbKhongGian3";
             rbKhongGian3.ShadowDecoration.CustomizableEdges = customizableEdges13;
@@ -473,7 +473,7 @@
             rbKhongGian4.CheckedState.BorderThickness = 0;
             rbKhongGian4.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbKhongGian4.CheckedState.InnerColor = Color.White;
-            rbKhongGian4.Location = new Point(922, 296);
+            rbKhongGian4.Location = new Point(1100, 296);
             rbKhongGian4.Margin = new Padding(3, 4, 3, 4);
             rbKhongGian4.Name = "rbKhongGian4";
             rbKhongGian4.ShadowDecoration.CustomizableEdges = customizableEdges14;
@@ -490,7 +490,7 @@
             rbKhongGian5.CheckedState.BorderThickness = 0;
             rbKhongGian5.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbKhongGian5.CheckedState.InnerColor = Color.White;
-            rbKhongGian5.Location = new Point(992, 296);
+            rbKhongGian5.Location = new Point(1170, 296);
             rbKhongGian5.Margin = new Padding(3, 4, 3, 4);
             rbKhongGian5.Name = "rbKhongGian5";
             rbKhongGian5.ShadowDecoration.CustomizableEdges = customizableEdges15;
@@ -505,7 +505,7 @@
             lblKG1.Anchor = AnchorStyles.Top;
             lblKG1.AutoSize = true;
             lblKG1.Font = new Font("Segoe UI", 10F);
-            lblKG1.Location = new Point(740, 299);
+            lblKG1.Location = new Point(918, 299);
             lblKG1.Name = "lblKG1";
             lblKG1.Size = new Size(19, 23);
             lblKG1.TabIndex = 29;
@@ -516,7 +516,7 @@
             lblKG2.Anchor = AnchorStyles.Top;
             lblKG2.AutoSize = true;
             lblKG2.Font = new Font("Segoe UI", 10F);
-            lblKG2.Location = new Point(810, 299);
+            lblKG2.Location = new Point(988, 299);
             lblKG2.Name = "lblKG2";
             lblKG2.Size = new Size(19, 23);
             lblKG2.TabIndex = 30;
@@ -527,7 +527,7 @@
             lblKG3.Anchor = AnchorStyles.Top;
             lblKG3.AutoSize = true;
             lblKG3.Font = new Font("Segoe UI", 10F);
-            lblKG3.Location = new Point(880, 299);
+            lblKG3.Location = new Point(1058, 299);
             lblKG3.Name = "lblKG3";
             lblKG3.Size = new Size(19, 23);
             lblKG3.TabIndex = 31;
@@ -538,7 +538,7 @@
             lblKG4.Anchor = AnchorStyles.Top;
             lblKG4.AutoSize = true;
             lblKG4.Font = new Font("Segoe UI", 10F);
-            lblKG4.Location = new Point(950, 299);
+            lblKG4.Location = new Point(1128, 299);
             lblKG4.Name = "lblKG4";
             lblKG4.Size = new Size(19, 23);
             lblKG4.TabIndex = 32;
@@ -549,7 +549,7 @@
             lblKG5.Anchor = AnchorStyles.Top;
             lblKG5.AutoSize = true;
             lblKG5.Font = new Font("Segoe UI", 10F);
-            lblKG5.Location = new Point(1020, 299);
+            lblKG5.Location = new Point(1198, 299);
             lblKG5.Name = "lblKG5";
             lblKG5.Size = new Size(19, 23);
             lblKG5.TabIndex = 33;
@@ -560,7 +560,7 @@
             lblDoDaDang.Anchor = AnchorStyles.Top;
             lblDoDaDang.AutoSize = true;
             lblDoDaDang.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblDoDaDang.Location = new Point(212, 375);
+            lblDoDaDang.Location = new Point(390, 375);
             lblDoDaDang.Name = "lblDoDaDang";
             lblDoDaDang.Size = new Size(365, 25);
             lblDoDaDang.TabIndex = 34;
@@ -573,7 +573,7 @@
             rbDoDaDang1.CheckedState.BorderThickness = 0;
             rbDoDaDang1.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbDoDaDang1.CheckedState.InnerColor = Color.White;
-            rbDoDaDang1.Location = new Point(712, 371);
+            rbDoDaDang1.Location = new Point(890, 371);
             rbDoDaDang1.Margin = new Padding(3, 4, 3, 4);
             rbDoDaDang1.Name = "rbDoDaDang1";
             rbDoDaDang1.ShadowDecoration.CustomizableEdges = customizableEdges16;
@@ -590,7 +590,7 @@
             rbDoDaDang2.CheckedState.BorderThickness = 0;
             rbDoDaDang2.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbDoDaDang2.CheckedState.InnerColor = Color.White;
-            rbDoDaDang2.Location = new Point(782, 371);
+            rbDoDaDang2.Location = new Point(960, 371);
             rbDoDaDang2.Margin = new Padding(3, 4, 3, 4);
             rbDoDaDang2.Name = "rbDoDaDang2";
             rbDoDaDang2.ShadowDecoration.CustomizableEdges = customizableEdges17;
@@ -607,7 +607,7 @@
             rbDoDaDang3.CheckedState.BorderThickness = 0;
             rbDoDaDang3.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbDoDaDang3.CheckedState.InnerColor = Color.White;
-            rbDoDaDang3.Location = new Point(852, 371);
+            rbDoDaDang3.Location = new Point(1030, 371);
             rbDoDaDang3.Margin = new Padding(3, 4, 3, 4);
             rbDoDaDang3.Name = "rbDoDaDang3";
             rbDoDaDang3.ShadowDecoration.CustomizableEdges = customizableEdges18;
@@ -624,7 +624,7 @@
             rbDoDaDang4.CheckedState.BorderThickness = 0;
             rbDoDaDang4.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbDoDaDang4.CheckedState.InnerColor = Color.White;
-            rbDoDaDang4.Location = new Point(922, 371);
+            rbDoDaDang4.Location = new Point(1100, 371);
             rbDoDaDang4.Margin = new Padding(3, 4, 3, 4);
             rbDoDaDang4.Name = "rbDoDaDang4";
             rbDoDaDang4.ShadowDecoration.CustomizableEdges = customizableEdges19;
@@ -641,7 +641,7 @@
             rbDoDaDang5.CheckedState.BorderThickness = 0;
             rbDoDaDang5.CheckedState.FillColor = Color.FromArgb(165, 85, 40);
             rbDoDaDang5.CheckedState.InnerColor = Color.White;
-            rbDoDaDang5.Location = new Point(992, 371);
+            rbDoDaDang5.Location = new Point(1170, 371);
             rbDoDaDang5.Margin = new Padding(3, 4, 3, 4);
             rbDoDaDang5.Name = "rbDoDaDang5";
             rbDoDaDang5.ShadowDecoration.CustomizableEdges = customizableEdges20;
@@ -656,7 +656,7 @@
             lblDD1.Anchor = AnchorStyles.Top;
             lblDD1.AutoSize = true;
             lblDD1.Font = new Font("Segoe UI", 10F);
-            lblDD1.Location = new Point(740, 374);
+            lblDD1.Location = new Point(918, 374);
             lblDD1.Name = "lblDD1";
             lblDD1.Size = new Size(19, 23);
             lblDD1.TabIndex = 40;
@@ -667,7 +667,7 @@
             lblDD2.Anchor = AnchorStyles.Top;
             lblDD2.AutoSize = true;
             lblDD2.Font = new Font("Segoe UI", 10F);
-            lblDD2.Location = new Point(810, 374);
+            lblDD2.Location = new Point(988, 374);
             lblDD2.Name = "lblDD2";
             lblDD2.Size = new Size(19, 23);
             lblDD2.TabIndex = 41;
@@ -678,7 +678,7 @@
             lblDD3.Anchor = AnchorStyles.Top;
             lblDD3.AutoSize = true;
             lblDD3.Font = new Font("Segoe UI", 10F);
-            lblDD3.Location = new Point(880, 374);
+            lblDD3.Location = new Point(1058, 374);
             lblDD3.Name = "lblDD3";
             lblDD3.Size = new Size(19, 23);
             lblDD3.TabIndex = 42;
@@ -689,7 +689,7 @@
             lblDD4.Anchor = AnchorStyles.Top;
             lblDD4.AutoSize = true;
             lblDD4.Font = new Font("Segoe UI", 10F);
-            lblDD4.Location = new Point(950, 374);
+            lblDD4.Location = new Point(1128, 374);
             lblDD4.Name = "lblDD4";
             lblDD4.Size = new Size(19, 23);
             lblDD4.TabIndex = 43;
@@ -700,7 +700,7 @@
             lblDD5.Anchor = AnchorStyles.Top;
             lblDD5.AutoSize = true;
             lblDD5.Font = new Font("Segoe UI", 10F);
-            lblDD5.Location = new Point(1020, 374);
+            lblDD5.Location = new Point(1198, 374);
             lblDD5.Name = "lblDD5";
             lblDD5.Size = new Size(19, 23);
             lblDD5.TabIndex = 44;
@@ -711,7 +711,7 @@
             lblGopY.Anchor = AnchorStyles.Top;
             lblGopY.AutoSize = true;
             lblGopY.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
-            lblGopY.Location = new Point(212, 450);
+            lblGopY.Location = new Point(390, 450);
             lblGopY.Name = "lblGopY";
             lblGopY.Size = new Size(65, 25);
             lblGopY.TabIndex = 45;
@@ -725,7 +725,7 @@
             txtGopY.CustomizableEdges = customizableEdges21;
             txtGopY.DefaultText = "";
             txtGopY.Font = new Font("Segoe UI", 10F);
-            txtGopY.Location = new Point(212, 500);
+            txtGopY.Location = new Point(390, 500);
             txtGopY.Margin = new Padding(4, 6, 4, 6);
             txtGopY.Multiline = true;
             txtGopY.Name = "txtGopY";
@@ -747,7 +747,7 @@
             btnGui.FillColor = Color.FromArgb(165, 85, 40);
             btnGui.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnGui.ForeColor = Color.White;
-            btnGui.Location = new Point(562, 662);
+            btnGui.Location = new Point(740, 662);
             btnGui.Margin = new Padding(3, 4, 3, 4);
             btnGui.Name = "btnGui";
             btnGui.ShadowDecoration.CustomizableEdges = customizableEdges24;
@@ -812,7 +812,7 @@
             Controls.Add(lblTitle);
             Margin = new Padding(3, 4, 3, 4);
             Name = "UC_Estimate";
-            Size = new Size(1225, 740);
+            Size = new Size(1580, 754);
             ResumeLayout(false);
             PerformLayout();
         }

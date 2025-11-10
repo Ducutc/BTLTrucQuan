@@ -29,7 +29,7 @@
             flowPanel.Dock = DockStyle.Top;
             flowPanel.Location = new Point(0, 0);
             flowPanel.Name = "flowPanel";
-            flowPanel.Size = new Size(1580, 662);
+            flowPanel.Size = new Size(1580, 692);
             flowPanel.TabIndex = 0;
             // 
             // btnDatHang

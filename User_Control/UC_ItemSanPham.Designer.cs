@@ -63,7 +63,7 @@
             // 
             guna2HtmlLabel2.AutoSize = false;
             guna2HtmlLabel2.BackColor = Color.Transparent;
-            guna2HtmlLabel2.Location = new Point(33, 263);
+            guna2HtmlLabel2.Location = new Point(33, 231);
             guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             guna2HtmlLabel2.Size = new Size(96, 22);
             guna2HtmlLabel2.TabIndex = 2;
@@ -72,7 +72,7 @@
             // guna2HtmlLabel3
             // 
             guna2HtmlLabel3.BackColor = Color.Transparent;
-            guna2HtmlLabel3.Location = new Point(182, 263);
+            guna2HtmlLabel3.Location = new Point(182, 231);
             guna2HtmlLabel3.Name = "guna2HtmlLabel3";
             guna2HtmlLabel3.Size = new Size(81, 22);
             guna2HtmlLabel3.TabIndex = 3;
@@ -82,7 +82,7 @@
             // 
             guna2HtmlLabel4.AutoSize = false;
             guna2HtmlLabel4.BackColor = Color.Transparent;
-            guna2HtmlLabel4.Location = new Point(33, 329);
+            guna2HtmlLabel4.Location = new Point(33, 303);
             guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             guna2HtmlLabel4.Size = new Size(96, 22);
             guna2HtmlLabel4.TabIndex = 4;
@@ -93,7 +93,7 @@
             guna2NumericUpDown1.BackColor = Color.Transparent;
             guna2NumericUpDown1.CustomizableEdges = customizableEdges3;
             guna2NumericUpDown1.Font = new Font("Segoe UI", 9F);
-            guna2NumericUpDown1.Location = new Point(182, 329);
+            guna2NumericUpDown1.Location = new Point(182, 303);
             guna2NumericUpDown1.Margin = new Padding(3, 4, 3, 4);
             guna2NumericUpDown1.Name = "guna2NumericUpDown1";
             guna2NumericUpDown1.ShadowDecoration.CustomizableEdges = customizableEdges4;
@@ -116,8 +116,9 @@
             Controls.Add(guna2HtmlLabel2);
             Controls.Add(guna2PictureBox1);
             ForeColor = Color.Black;
+            Margin = new Padding(0);
             Name = "UC_ItemSanPham";
-            Size = new Size(300, 400);
+            Size = new Size(300, 361);
             ((System.ComponentModel.ISupportInitialize)guna2PictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)guna2NumericUpDown1).EndInit();
             ResumeLayout(false);

@@ -83,6 +83,16 @@ namespace CoffeeHouseABC.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bacxiu {
+            get {
+                object obj = ResourceManager.GetObject("bacxiu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cfden {
             get {
                 object obj = ResourceManager.GetObject("cfden", resourceCulture);
@@ -96,6 +106,16 @@ namespace CoffeeHouseABC.Properties {
         internal static System.Drawing.Bitmap cfsuada {
             get {
                 object obj = ResourceManager.GetObject("cfsuada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cftrung {
+            get {
+                object obj = ResourceManager.GetObject("cftrung", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

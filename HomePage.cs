@@ -23,6 +23,7 @@ namespace CoffeeHouseABC
         public HomePage()
         {
             InitializeComponent();
+           
         }
 
         // 🔹 Khi cần chuyển sang tab "Đơn hàng"
@@ -48,6 +49,7 @@ namespace CoffeeHouseABC
             // 🔹 Khởi tạo menu một lần duy nhất
             _ucMenu = new UC_Menu();
             LoadUserControl(_ucMenu);
+
         }
 
         // 🔹 Hàm nạp UserControl chung
@@ -70,6 +72,7 @@ namespace CoffeeHouseABC
         private void btnLichSuMuaHang_Click(object sender, EventArgs e)
         {
             LoadUserControl(new UC_PurchaseHistory());
+
         }
 
         private void btnDonHang_Click(object sender, EventArgs e)
@@ -191,5 +194,10 @@ namespace CoffeeHouseABC
                 this.Close();
             }
         }
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();  // Đảm bảo thoát hoàn toàn chương trình
+        }
+
     }
 }

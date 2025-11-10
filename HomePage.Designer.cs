@@ -77,7 +77,7 @@ namespace CoffeeHouseABC
             guna2Panel2.Location = new Point(0, 0);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel2.Size = new Size(1902, 113);
+            guna2Panel2.Size = new Size(1902, 91);
             guna2Panel2.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -88,7 +88,7 @@ namespace CoffeeHouseABC
             guna2HtmlLabel1.ForeColor = Color.White;
             guna2HtmlLabel1.Location = new Point(3, 0);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(1899, 113);
+            guna2HtmlLabel1.Size = new Size(1899, 91);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Chào mừng bạn đến với quán Cafe và đồ uống ABC ";
             guna2HtmlLabel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -110,10 +110,10 @@ namespace CoffeeHouseABC
             guna2Panel3.CustomizableEdges = customizableEdges17;
             guna2Panel3.Dock = DockStyle.Left;
             guna2Panel3.FillColor = Color.White;
-            guna2Panel3.Location = new Point(0, 113);
+            guna2Panel3.Location = new Point(0, 91);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Panel3.Size = new Size(322, 920);
+            guna2Panel3.Size = new Size(322, 942);
             guna2Panel3.TabIndex = 2;
             // 
             // btnDangXuat
@@ -321,10 +321,10 @@ namespace CoffeeHouseABC
             panelContainer.CustomizableEdges = customizableEdges19;
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.FillColor = Color.White;
-            panelContainer.Location = new Point(322, 113);
+            panelContainer.Location = new Point(322, 91);
             panelContainer.Name = "panelContainer";
             panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            panelContainer.Size = new Size(1580, 920);
+            panelContainer.Size = new Size(1580, 942);
             panelContainer.TabIndex = 3;
             // 
             // HomePage
@@ -340,6 +340,7 @@ namespace CoffeeHouseABC
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
             WindowState = FormWindowState.Maximized;
+            FormClosing += MainForm_FormClosing;
             guna2Panel2.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
             ResumeLayout(false);

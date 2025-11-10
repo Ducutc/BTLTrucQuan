@@ -10,7 +10,9 @@ VALUES
 (N'Cà phê đen đá', 22000, 'cfden', N'Đậm vị, không đường'),
 (N'Trà đào cam sả', 35000, 'tradao', N'Thức uống giải khát'),
 (N'Matcha latte', 40000, 'matcha', N'Matcha tươi, sữa thơm'),
-(N'Bánh cheesecake', 30000,'cheesecake', N'Bánh mềm mịn');
+(N'Bánh cheesecake', 30000,'cheesecake', N'Bánh mềm mịn'),
+(N'Cà phê trứng', 350000, 'matcha', N'Vị như trứng'),
+(N'Bạc xỉu', 20000,'cheesecake', N'Phù hợp với trẻ con');
 
 
 INSERT INTO DONHANG (MaKH, TongTien, TrangThai)

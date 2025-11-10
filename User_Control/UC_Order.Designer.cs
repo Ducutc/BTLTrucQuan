@@ -30,7 +30,7 @@
             panelList.Dock = DockStyle.Top;
             panelList.Location = new Point(0, 0);
             panelList.Name = "panelList";
-            panelList.Size = new Size(1580, 586);
+            panelList.Size = new Size(1580, 628);
             panelList.TabIndex = 0;
             // 
             // lblTongTien
@@ -38,9 +38,9 @@
             lblTongTien.BackColor = Color.White;
             lblTongTien.Dock = DockStyle.Bottom;
             lblTongTien.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            lblTongTien.Location = new Point(0, 589);
+            lblTongTien.Location = new Point(0, 631);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(1580, 88);
+            lblTongTien.Size = new Size(1580, 46);
             lblTongTien.TabIndex = 1;
             lblTongTien.Text = "Tổng: 0 VNĐ";
             lblTongTien.TextAlign = ContentAlignment.MiddleCenter;
@@ -62,7 +62,7 @@
             // guna2Elipse1
             // 
             guna2Elipse1.BorderRadius = 50;
-            guna2Elipse1.TargetControl = btnThanhToan;
+            guna2Elipse1.TargetControl = panelList;
             // 
             // UC_Order
             // 
