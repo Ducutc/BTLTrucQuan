@@ -1,7 +1,9 @@
-﻿using CoffeeHouseABC.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using CoffeeHouseABC.Database;
+using CoffeeHouseABC.Models;
+using CoffeeHouseABC.Utils;
 
 namespace CoffeeHouseABC.User_Control
 {
@@ -68,9 +70,50 @@ namespace CoffeeHouseABC.User_Control
             lblTongTien.Text = $"Tổng: {tong:N0} VNĐ";
         }
 
-        private void BtnThanhToan_Click(object sender, System.EventArgs e)
+        private void BtnThanhToan_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Đang xử lý thanh toán...");
+            if (_ds == null || _ds.Count == 0)
+            {
+                MessageBox.Show("Không có sản phẩm nào trong giỏ hàng!");
+                return;
+            }
+
+            // Kiểm tra xem người dùng đã đăng nhập chưa
+            if (SessionManager.CurrentUser == null)
+            {
+                MessageBox.Show("Vui lòng đăng nhập trước khi đặt hàng.");
+                return;
+            }
+
+            try
+            {
+                DatabaseService db = new DatabaseService();
+                int maKH = SessionManager.CurrentUser.MaKH;
+
+                decimal tongTien = _ds.Sum(x => x.DonGiaBan * x.SoLuong);
+
+                int maHD = db.TaoDonHang(maKH, tongTien, "Chưa thanh toán", _ds);
+
+                MessageBox.Show($"Đặt hàng thành công! Mã đơn hàng: {maHD}");
+
+                var history = new UC_PurchaseHitstory();
+                var parent = this.Parent;
+                if (parent != null)
+                {
+                    parent.Controls.Clear();
+                    parent.Controls.Add(history);
+                }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy container để hiển thị lịch sử mua hàng.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi khi lưu đơn hàng: " + ex.ToString());
+            }
         }
+
+
     }
 }

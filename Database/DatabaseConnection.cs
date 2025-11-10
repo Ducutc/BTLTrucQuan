@@ -167,6 +167,51 @@ namespace CoffeeHouseABC.Database
 
             return cmd.ExecuteScalar()?.ToString() ?? "";
         }
+        public int TaoDonHang(int maKH, decimal tongTien, string trangThai, List<ChiTietDonHang> chiTietList)
+        {
+            using (SqlConnection conn = DatabaseConnection.GetConnection())
+            {
+                conn.Open();
+                SqlTransaction tran = conn.BeginTransaction();
+
+                try
+                {
+                    // 1️⃣ Thêm đơn hàng
+                    string sqlHD = @"INSERT INTO DONHANG (MaKH, TongTien, TrangThai, NgayLap)
+                             OUTPUT INSERTED.MaHD
+                             VALUES (@maKH, @tongTien, @trangThai, GETDATE())";
+
+                    using SqlCommand cmdHD = new SqlCommand(sqlHD, conn, tran);
+                    cmdHD.Parameters.AddWithValue("@maKH", maKH);
+                    cmdHD.Parameters.AddWithValue("@tongTien", tongTien);
+                    cmdHD.Parameters.AddWithValue("@trangThai", trangThai);
+
+                    int maHD = (int)cmdHD.ExecuteScalar();
+
+                    // 2️⃣ Thêm chi tiết đơn hàng
+                    foreach (var ct in chiTietList)
+                    {
+                        string sqlCT = @"INSERT INTO CHITIETDONHANG (MaHD, MaSP, SoLuong, DonGiaBan)
+                                 VALUES (@maHD, @maSP, @soLuong, @gia)";
+                        using SqlCommand cmdCT = new SqlCommand(sqlCT, conn, tran);
+                        cmdCT.Parameters.AddWithValue("@maHD", maHD);
+                        cmdCT.Parameters.AddWithValue("@maSP", ct.MaSP);
+                        cmdCT.Parameters.AddWithValue("@soLuong", ct.SoLuong);
+                        cmdCT.Parameters.AddWithValue("@gia", ct.DonGiaBan);
+                        cmdCT.ExecuteNonQuery();
+                    }
+
+                    tran.Commit();
+                    return maHD;
+                }
+                catch (Exception)
+                {
+                    tran.Rollback();
+                    throw;
+                }
+            }
+        }
+
 
     }
 

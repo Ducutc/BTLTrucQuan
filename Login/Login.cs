@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 using CoffeeHouseABC.Database;   // để dùng DatabaseService
 using CoffeeHouseABC.Utils;      // SessionManager
-
+using CoffeeHouseABC.Models;
 namespace CoffeeHouseABC.Login
 {
     public partial class Login : Form
