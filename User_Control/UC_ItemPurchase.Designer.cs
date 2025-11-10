@@ -32,54 +32,66 @@
             lblTongTien = new Label();
             lblNgay = new Label();
             lblTrangThai = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            flowLayoutPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // lblMaHD
             // 
-            lblMaHD.Location = new Point(-1, 0);
+            lblMaHD.Location = new Point(3, 0);
             lblMaHD.Name = "lblMaHD";
-            lblMaHD.Size = new Size(223, 55);
+            lblMaHD.Size = new Size(304, 47);
             lblMaHD.TabIndex = 0;
             lblMaHD.Text = "label1";
             lblMaHD.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblTongTien
             // 
-            lblTongTien.Location = new Point(457, 0);
+            lblTongTien.Location = new Point(623, 0);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(223, 55);
+            lblTongTien.Size = new Size(304, 47);
             lblTongTien.TabIndex = 1;
             lblTongTien.Text = "label1";
             lblTongTien.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNgay
             // 
-            lblNgay.Location = new Point(228, 0);
+            lblNgay.Location = new Point(313, 0);
             lblNgay.Name = "lblNgay";
-            lblNgay.Size = new Size(223, 55);
+            lblNgay.Size = new Size(304, 47);
             lblNgay.TabIndex = 2;
             lblNgay.Text = "label1";
             lblNgay.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblTrangThai
             // 
-            lblTrangThai.Location = new Point(686, 0);
+            lblTrangThai.Location = new Point(933, 0);
             lblTrangThai.Name = "lblTrangThai";
-            lblTrangThai.Size = new Size(223, 55);
+            lblTrangThai.Size = new Size(304, 47);
             lblTrangThai.TabIndex = 3;
             lblTrangThai.Text = "label3";
             lblTrangThai.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // flowLayoutPanel1
+            // 
+            flowLayoutPanel1.Controls.Add(lblMaHD);
+            flowLayoutPanel1.Controls.Add(lblNgay);
+            flowLayoutPanel1.Controls.Add(lblTongTien);
+            flowLayoutPanel1.Controls.Add(lblTrangThai);
+            flowLayoutPanel1.Dock = DockStyle.Fill;
+            flowLayoutPanel1.Location = new Point(0, 0);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            flowLayoutPanel1.Size = new Size(1550, 50);
+            flowLayoutPanel1.TabIndex = 4;
             // 
             // UC_ItemPurchase
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(lblTrangThai);
-            Controls.Add(lblNgay);
-            Controls.Add(lblTongTien);
-            Controls.Add(lblMaHD);
+            Controls.Add(flowLayoutPanel1);
             Name = "UC_ItemPurchase";
-            Size = new Size(1104, 564);
+            Size = new Size(1550, 50);
+            flowLayoutPanel1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -89,5 +101,6 @@
         private Label lblTongTien;
         private Label lblNgay;
         private Label lblTrangThai;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }

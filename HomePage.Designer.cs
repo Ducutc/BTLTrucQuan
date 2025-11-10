@@ -77,7 +77,7 @@ namespace CoffeeHouseABC
             guna2Panel2.Location = new Point(0, 0);
             guna2Panel2.Name = "guna2Panel2";
             guna2Panel2.ShadowDecoration.CustomizableEdges = customizableEdges2;
-            guna2Panel2.Size = new Size(1354, 113);
+            guna2Panel2.Size = new Size(1902, 113);
             guna2Panel2.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -88,7 +88,7 @@ namespace CoffeeHouseABC
             guna2HtmlLabel1.ForeColor = Color.White;
             guna2HtmlLabel1.Location = new Point(3, 0);
             guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            guna2HtmlLabel1.Size = new Size(1396, 113);
+            guna2HtmlLabel1.Size = new Size(1899, 113);
             guna2HtmlLabel1.TabIndex = 0;
             guna2HtmlLabel1.Text = "Chào mừng bạn đến với quán Cafe và đồ uống ABC ";
             guna2HtmlLabel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -113,7 +113,7 @@ namespace CoffeeHouseABC
             guna2Panel3.Location = new Point(0, 113);
             guna2Panel3.Name = "guna2Panel3";
             guna2Panel3.ShadowDecoration.CustomizableEdges = customizableEdges18;
-            guna2Panel3.Size = new Size(250, 564);
+            guna2Panel3.Size = new Size(322, 920);
             guna2Panel3.TabIndex = 2;
             // 
             // btnDangXuat
@@ -135,10 +135,10 @@ namespace CoffeeHouseABC
             btnDangXuat.HoverState.FillColor = Color.FromArgb(178, 101, 44);
             btnDangXuat.HoverState.Font = new Font("Segoe UI", 10F);
             btnDangXuat.HoverState.ForeColor = Color.White;
-            btnDangXuat.Location = new Point(0, 503);
+            btnDangXuat.Location = new Point(0, 783);
             btnDangXuat.Name = "btnDangXuat";
             btnDangXuat.ShadowDecoration.CustomizableEdges = customizableEdges4;
-            btnDangXuat.Size = new Size(250, 56);
+            btnDangXuat.Size = new Size(322, 56);
             btnDangXuat.TabIndex = 5;
             btnDangXuat.Text = "Đăng xuất";
             btnDangXuat.TextAlign = HorizontalAlignment.Left;
@@ -163,7 +163,7 @@ namespace CoffeeHouseABC
             btnDanhMuc.Location = new Point(0, 0);
             btnDanhMuc.Name = "btnDanhMuc";
             btnDanhMuc.ShadowDecoration.CustomizableEdges = customizableEdges6;
-            btnDanhMuc.Size = new Size(250, 56);
+            btnDanhMuc.Size = new Size(322, 56);
             btnDanhMuc.TabIndex = 6;
             btnDanhMuc.Text = "Danh mục";
             btnDanhMuc.Click += btnDanhMuc_Click;
@@ -192,7 +192,7 @@ namespace CoffeeHouseABC
             btnThucDon.Location = new Point(0, 80);
             btnThucDon.Name = "btnThucDon";
             btnThucDon.ShadowDecoration.CustomizableEdges = customizableEdges8;
-            btnThucDon.Size = new Size(250, 56);
+            btnThucDon.Size = new Size(322, 56);
             btnThucDon.TabIndex = 0;
             btnThucDon.Text = "Thực đơn";
             btnThucDon.TextAlign = HorizontalAlignment.Left;
@@ -219,10 +219,10 @@ namespace CoffeeHouseABC
             btnDonHang.HoverState.Font = new Font("Segoe UI", 10F);
             btnDonHang.HoverState.ForeColor = Color.White;
             btnDonHang.ImageSize = new Size(30, 30);
-            btnDonHang.Location = new Point(0, 142);
+            btnDonHang.Location = new Point(3, 201);
             btnDonHang.Name = "btnDonHang";
             btnDonHang.ShadowDecoration.CustomizableEdges = customizableEdges10;
-            btnDonHang.Size = new Size(250, 56);
+            btnDonHang.Size = new Size(316, 56);
             btnDonHang.TabIndex = 2;
             btnDonHang.Text = "Đơn hàng";
             btnDonHang.TextAlign = HorizontalAlignment.Left;
@@ -234,7 +234,9 @@ namespace CoffeeHouseABC
             btnLichSuMuaHang.Animated = true;
             btnLichSuMuaHang.BorderRadius = 10;
             btnLichSuMuaHang.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnLichSuMuaHang.CustomImages.Image = Properties.Resources.send;
             btnLichSuMuaHang.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnLichSuMuaHang.CustomImages.ImageSize = new Size(30, 30);
             btnLichSuMuaHang.CustomizableEdges = customizableEdges11;
             btnLichSuMuaHang.DisabledState.BorderColor = Color.DarkGray;
             btnLichSuMuaHang.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -246,10 +248,10 @@ namespace CoffeeHouseABC
             btnLichSuMuaHang.HoverState.FillColor = Color.FromArgb(178, 101, 44);
             btnLichSuMuaHang.HoverState.Font = new Font("Segoe UI", 10F);
             btnLichSuMuaHang.HoverState.ForeColor = Color.White;
-            btnLichSuMuaHang.Location = new Point(0, 204);
+            btnLichSuMuaHang.Location = new Point(3, 321);
             btnLichSuMuaHang.Name = "btnLichSuMuaHang";
             btnLichSuMuaHang.ShadowDecoration.CustomizableEdges = customizableEdges12;
-            btnLichSuMuaHang.Size = new Size(250, 56);
+            btnLichSuMuaHang.Size = new Size(319, 56);
             btnLichSuMuaHang.TabIndex = 3;
             btnLichSuMuaHang.Text = "Lịch sử mua hàng";
             btnLichSuMuaHang.TextAlign = HorizontalAlignment.Left;
@@ -261,7 +263,9 @@ namespace CoffeeHouseABC
             btnDanhGia.Animated = true;
             btnDanhGia.BorderRadius = 10;
             btnDanhGia.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            btnDanhGia.CustomImages.Image = Properties.Resources.send;
             btnDanhGia.CustomImages.ImageAlign = HorizontalAlignment.Left;
+            btnDanhGia.CustomImages.ImageSize = new Size(30, 30);
             btnDanhGia.CustomizableEdges = customizableEdges13;
             btnDanhGia.DisabledState.BorderColor = Color.DarkGray;
             btnDanhGia.DisabledState.CustomBorderColor = Color.DarkGray;
@@ -273,10 +277,10 @@ namespace CoffeeHouseABC
             btnDanhGia.HoverState.FillColor = Color.FromArgb(178, 101, 44);
             btnDanhGia.HoverState.Font = new Font("Segoe UI", 10F);
             btnDanhGia.HoverState.ForeColor = Color.White;
-            btnDanhGia.Location = new Point(0, 266);
+            btnDanhGia.Location = new Point(0, 425);
             btnDanhGia.Name = "btnDanhGia";
             btnDanhGia.ShadowDecoration.CustomizableEdges = customizableEdges14;
-            btnDanhGia.Size = new Size(250, 56);
+            btnDanhGia.Size = new Size(319, 56);
             btnDanhGia.TabIndex = 1;
             btnDanhGia.Text = "Đánh giá";
             btnDanhGia.TextAlign = HorizontalAlignment.Left;
@@ -302,10 +306,10 @@ namespace CoffeeHouseABC
             btnThongTinTaiKhoan.HoverState.FillColor = Color.FromArgb(178, 101, 44);
             btnThongTinTaiKhoan.HoverState.Font = new Font("Segoe UI", 10F);
             btnThongTinTaiKhoan.HoverState.ForeColor = Color.White;
-            btnThongTinTaiKhoan.Location = new Point(0, 328);
+            btnThongTinTaiKhoan.Location = new Point(3, 533);
             btnThongTinTaiKhoan.Name = "btnThongTinTaiKhoan";
             btnThongTinTaiKhoan.ShadowDecoration.CustomizableEdges = customizableEdges16;
-            btnThongTinTaiKhoan.Size = new Size(250, 56);
+            btnThongTinTaiKhoan.Size = new Size(319, 56);
             btnThongTinTaiKhoan.TabIndex = 4;
             btnThongTinTaiKhoan.Text = "Thông tin tài khoản";
             btnThongTinTaiKhoan.TextAlign = HorizontalAlignment.Left;
@@ -317,10 +321,10 @@ namespace CoffeeHouseABC
             panelContainer.CustomizableEdges = customizableEdges19;
             panelContainer.Dock = DockStyle.Fill;
             panelContainer.FillColor = Color.White;
-            panelContainer.Location = new Point(250, 113);
+            panelContainer.Location = new Point(322, 113);
             panelContainer.Name = "panelContainer";
             panelContainer.ShadowDecoration.CustomizableEdges = customizableEdges20;
-            panelContainer.Size = new Size(1104, 564);
+            panelContainer.Size = new Size(1580, 920);
             panelContainer.TabIndex = 3;
             // 
             // HomePage
@@ -328,13 +332,14 @@ namespace CoffeeHouseABC
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(1354, 677);
+            ClientSize = new Size(1902, 1033);
             Controls.Add(panelContainer);
             Controls.Add(guna2Panel3);
             Controls.Add(guna2Panel2);
             Name = "HomePage";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Trang chủ";
+            WindowState = FormWindowState.Maximized;
             guna2Panel2.ResumeLayout(false);
             guna2Panel3.ResumeLayout(false);
             ResumeLayout(false);

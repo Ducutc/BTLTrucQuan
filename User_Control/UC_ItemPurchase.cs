@@ -23,7 +23,5 @@ namespace CoffeeHouseABC.User_Control
             lblTongTien.Text = tongTien;
             lblTrangThai.Text = trangThai;
         }
-
-        
     }
 }

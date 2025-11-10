@@ -15,7 +15,7 @@ namespace CoffeeHouseABC
 
         // 🔹 Cho phép null để tránh CS8618
         private UC_Menu? _ucMenu;
-        private UC_PurchaseHitstory? _ucHistory;
+        private UC_PurchaseHistory? _ucHistory;
 
         private List<ChiTietDonHang> _gioHang = new();
         private List<string> _tenSP = new();
@@ -69,7 +69,7 @@ namespace CoffeeHouseABC
 
         private void btnLichSuMuaHang_Click(object sender, EventArgs e)
         {
-            LoadUserControl(new UC_PurchaseHitstory());
+            LoadUserControl(new UC_PurchaseHistory());
         }
 
         private void btnDonHang_Click(object sender, EventArgs e)

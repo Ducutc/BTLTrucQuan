@@ -17,33 +17,49 @@
 
         private void InitializeComponent()
         {
-            this.flowPanel = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnDatHang = new System.Windows.Forms.Button();
-            this.SuspendLayout();
-
+            components = new System.ComponentModel.Container();
+            flowPanel = new FlowLayoutPanel();
+            btnDatHang = new Button();
+            guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(components);
+            SuspendLayout();
+            // 
             // flowPanel
-            this.flowPanel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowPanel.AutoScroll = true;
-            this.flowPanel.Location = new System.Drawing.Point(0, 0);
-            this.flowPanel.Name = "flowPanel";
-            this.flowPanel.Size = new System.Drawing.Size(900, 520);
-
+            // 
+            flowPanel.AutoScroll = true;
+            flowPanel.Dock = DockStyle.Top;
+            flowPanel.Location = new Point(0, 0);
+            flowPanel.Name = "flowPanel";
+            flowPanel.Size = new Size(1580, 662);
+            flowPanel.TabIndex = 0;
+            // 
             // btnDatHang
-            this.btnDatHang.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnDatHang.Height = 60;
-            this.btnDatHang.Text = "Đặt hàng";
-            this.btnDatHang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.btnDatHang.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btnDatHang.ForeColor = System.Drawing.Color.White;
-            this.btnDatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDatHang.Click += new System.EventHandler(this.btnDatHang_Click);
-
+            // 
+            btnDatHang.BackColor = Color.DodgerBlue;
+            btnDatHang.Dock = DockStyle.Bottom;
+            btnDatHang.FlatStyle = FlatStyle.Flat;
+            btnDatHang.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            btnDatHang.ForeColor = Color.White;
+            btnDatHang.Location = new Point(0, 698);
+            btnDatHang.Name = "btnDatHang";
+            btnDatHang.Size = new Size(1580, 56);
+            btnDatHang.TabIndex = 1;
+            btnDatHang.Text = "Đặt hàng";
+            btnDatHang.UseVisualStyleBackColor = false;
+            btnDatHang.Click += btnDatHang_Click;
+            // 
+            // guna2Elipse1
+            // 
+            guna2Elipse1.BorderRadius = 50;
+            guna2Elipse1.TargetControl = btnDatHang;
+            // 
             // UC_Menu
-            this.Controls.Add(this.flowPanel);
-            this.Controls.Add(this.btnDatHang);
-            this.Name = "UC_Menu";
-            this.Size = new System.Drawing.Size(900, 600);
-            this.ResumeLayout(false);
+            // 
+            Controls.Add(btnDatHang);
+            Controls.Add(flowPanel);
+            Name = "UC_Menu";
+            Size = new Size(1580, 754);
+            ResumeLayout(false);
         }
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

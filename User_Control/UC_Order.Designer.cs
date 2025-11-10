@@ -26,29 +26,34 @@
             // panelList
             // 
             panelList.AutoScroll = true;
+            panelList.BackColor = Color.White;
             panelList.Dock = DockStyle.Top;
             panelList.Location = new Point(0, 0);
             panelList.Name = "panelList";
-            panelList.Size = new Size(500, 450);
+            panelList.Size = new Size(1580, 586);
             panelList.TabIndex = 0;
             // 
             // lblTongTien
             // 
-            lblTongTien.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblTongTien.Location = new Point(20, 460);
+            lblTongTien.BackColor = Color.White;
+            lblTongTien.Dock = DockStyle.Bottom;
+            lblTongTien.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
+            lblTongTien.Location = new Point(0, 589);
             lblTongTien.Name = "lblTongTien";
-            lblTongTien.Size = new Size(300, 30);
+            lblTongTien.Size = new Size(1580, 88);
             lblTongTien.TabIndex = 1;
             lblTongTien.Text = "Tổng: 0 VNĐ";
+            lblTongTien.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnThanhToan
             // 
             btnThanhToan.BackColor = Color.FromArgb(70, 183, 91);
+            btnThanhToan.Dock = DockStyle.Bottom;
             btnThanhToan.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
             btnThanhToan.ForeColor = Color.White;
-            btnThanhToan.Location = new Point(192, 527);
+            btnThanhToan.Location = new Point(0, 677);
             btnThanhToan.Name = "btnThanhToan";
-            btnThanhToan.Size = new Size(200, 45);
+            btnThanhToan.Size = new Size(1580, 77);
             btnThanhToan.TabIndex = 2;
             btnThanhToan.Text = "Thanh toán";
             btnThanhToan.UseVisualStyleBackColor = false;
@@ -56,16 +61,17 @@
             // 
             // guna2Elipse1
             // 
-            guna2Elipse1.BorderRadius = 15;
+            guna2Elipse1.BorderRadius = 50;
             guna2Elipse1.TargetControl = btnThanhToan;
             // 
             // UC_Order
             // 
+            BackColor = Color.White;
             Controls.Add(panelList);
             Controls.Add(lblTongTien);
             Controls.Add(btnThanhToan);
             Name = "UC_Order";
-            Size = new Size(500, 600);
+            Size = new Size(1580, 754);
             ResumeLayout(false);
         }
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;

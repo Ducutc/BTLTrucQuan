@@ -7,16 +7,16 @@ using Microsoft.Data.SqlClient;
 
 namespace CoffeeHouseABC.User_Control
 {
-    public partial class UC_PurchaseHitstory : UserControl
+    public partial class UC_PurchaseHistory : UserControl
     {
         private bool _isLoaded = false; // tránh load lại nhiều lần
 
-        public UC_PurchaseHitstory()
+        public UC_PurchaseHistory()
         {
             InitializeComponent();
         }
 
-        private void UC_PurchaseHitstory_Load(object sender, EventArgs e)
+        private void UC_PurchaseHistory_Load(object sender, EventArgs e)
         {
             // chỉ load một lần đầu tiên khi UC được tạo
             if (!_isLoaded)
@@ -50,7 +50,7 @@ namespace CoffeeHouseABC.User_Control
                     string sql = @"
                         SELECT MaHD, NgayLap, TongTien, TrangThai 
                         FROM DONHANG
-                        WHERE MaKH = @maKH
+                        WHERE MaKH = 2
                         ORDER BY NgayLap DESC";
 
                     using (SqlCommand cmd = new SqlCommand(sql, conn))

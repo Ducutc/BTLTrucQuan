@@ -96,12 +96,35 @@ namespace CoffeeHouseABC.User_Control
 
                 MessageBox.Show($"Đặt hàng thành công! Mã đơn hàng: {maHD}");
 
-                var history = new UC_PurchaseHitstory();
+                // ✅ Thay vì tạo UC_PurchaseHistory mới, tìm control có sẵn và reload dữ liệu
                 var parent = this.Parent;
                 if (parent != null)
                 {
+                    UC_PurchaseHistory historyUC = null;
+
+                    // Tìm UC_PurchaseHistory trong danh sách control cha
+                    foreach (Control ctrl in parent.Controls)
+                    {
+                        if (ctrl is UC_PurchaseHistory uc)
+                        {
+                            historyUC = uc;
+                            break;
+                        }
+                    }
+
+                    if (historyUC == null)
+                    {
+                        // Nếu chưa có thì tạo mới (lần đầu tiên)
+                        historyUC = new UC_PurchaseHistory();
+                        historyUC.Dock = DockStyle.Fill;
+                    }
+
+                    // Gọi load lại dữ liệu
+                    historyUC.LoadPurchaseHistory();
+
+                    // Hiển thị UC_PurchaseHistory
                     parent.Controls.Clear();
-                    parent.Controls.Add(history);
+                    parent.Controls.Add(historyUC);
                 }
                 else
                 {
@@ -110,10 +133,10 @@ namespace CoffeeHouseABC.User_Control
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lỗi khi lưu đơn hàng: " + ex.ToString());
+                MessageBox.Show("Lỗi khi lưu đơn hàng: " + ex.Message);
             }
         }
 
-
+        
     }
 }
