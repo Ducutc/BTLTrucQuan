@@ -8,6 +8,7 @@ namespace CoffeeHouseABC.Models
         public string VaiTro { get; set; } = string.Empty;
         public DateTime NgayTao { get; set; }
 
+        public string Email { get; set; } = string.Empty;
         public static KhachHang? CurrentUser { get; set; }
     }
 }
